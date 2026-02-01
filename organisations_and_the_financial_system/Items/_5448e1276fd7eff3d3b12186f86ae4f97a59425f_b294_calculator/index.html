@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Calculator</title>
+		 <script src="vleapi.1.js"></script>
+ <!--   <link rel="stylesheet" href="css/reset.css">-->
+    <!--  <link rel="stylesheet" href="css/windows10.css">-->
+     <link rel="stylesheet" href="css/windows7.css">
+     <script src="js/math.min.js"></script>
+<!-- https://codepen.io/Killuminati/pen/grQxXE example code-->
+<!-- https://devblogs.microsoft.com/oldnewthing/20080110-00/?p=23853 hints re % button -->
+<!-- https://keycode.info/ to check keyboard info re numpad-->
+
+  </head>
+  <body>
+<div id="maindiv">
+    <div id='calculatorspace'><a id='plus' href='#' onclick='showhidecalc();'>&darr; Show calculator</a></div>
+ 
+<div class='calculatorcontainer' id='calculator_container'>
+  <div id="calculator" class='calculator'>
+       <div class="row" > <div class="screen"><div class='texttable'><div class='cell'><textarea id="historydisplay" name="historydisplay"  rows="1"  value="" disabled=""></textarea></div><div class='table-cell'><input id="main" name="main" value="" size='10' type="text" disabled=""></div></div></div>
+       <div class="row" style='height:3px;'></div>
+       <div class="row" ><button id="control_power"  style='order:1;'  data-value='^' class="sign button"><em>x<sup>n</sup></em></button><button id="number_7" class="number button" style='order:1;' data-value='7' >7</button><button id="number_8" class="number button" data-value='8' style='order:2;'>8</button><button id="number_9"  class="number button" data-value='9' style='order:3;'>9</button><button id="control_divide"  style='order:5;'  data-value='/' class="sign button">&divide;</button><button id="clear_entry" data-value='CE'   style='order:6;padding-left:3px;' class="sign button">CE</button></div>
+       <div class="row" ><button id="control_reciprocal" class="sign button"  data-value='1/x' style='order:14;'><span><sup>1</sup></span><span>⁄</span><span class="x-sign"><sub><em>x</em></sub>  </span></button><button id="number_4"  class="number button" style='order:11;' data-value='4'>4</button><button id="number_5"  class="number button" button data-value='5' style='order:12;'>5</button><button id="number_6"  class="number button" data-value='6' style='order:13;'>6</button><button id="control_multiply" class="sign button"  data-value='*' style='order:15;'>&times;</button><button id="clearbtn" data-value='C'   style='order:5;' class="sign button">C</button></div>
+       <div class="row" > <div class="minicalculator">
+                    <div class="row" > <button id="control_leftb" data-value='('  class="sign button" style='order:24;'>(</button><button id="number_1" data-value='1' class="number button" style='order:21;'>1</button><button id="number_2" data-value='2' class="number button" style='order:22;'>2</button><button id="number_3" data-value='3' class="number button" style='order:23;'>3</button><button id="control_minus" data-value='-'  class="sign button" style='order:25;'>-</button><button id="control_percent" data-value='%'  class="sign button" style='order:26;'>%</button></div>
+                              <!-- <div class="row" ><button id="number_0"  style='order:31;' data-value='0' class="wide number button ">0</button><button id="control_dot" data-value='.' class="sign button" style='order:32;'>.</button><button id="control_add" data-value='+' style='order:33;'class="sign button">+</button></div>
+                               </div><button id="control_equals" class=" sign  button" data-value='=' style='order:25;'>=</button>        -->
+                    <div class="row" ><button id="control_rightb" data-value=')' style='order:33;' class="sign button">)</button><button id="number_0"  style='order:31;' data-value='0' class="wide number button ">0</button><button id="control_dot" data-value='.' class="sign button" style='order:32;'>.</button><button id="control_add" data-value='+' style='order:34;' class="sign button">+</button><button id="control_equals" class=" sign  button" data-value='=' style='order:35;'>=</button> </div> </div>
+  </div>
+
+
+    </div>
+    </div>
+    </div>
+
+</div>
+  <!--     <div id="none_selected" style="display: none;"><strong>Please choose one of the answers.</strong></div><div id="fb0" class="immediatefeedback" style="display: flex;"><div class="inner"><p>Off we go then! Let’s tackle Activity 1!</p></div></div><div id="fb1" class="immediatefeedback" style="display: none;"><div class="inner"><p>It is difficult to say before having tried it! So make your way to Activity 1 and you will get a much better understanding of what serious play feels like.</p></div></div><div id="fb2" class="immediatefeedback" style="display: none;"><div class="inner"><p>Embracing an unfamiliar attitude might be challenging at first, but this is a safe learning environment. This is your time and space to try something new and take risks. Give it a try with Activity 1, and if after that, you still feel that this module is not for you contact your tutor or the student support team to discuss your options.</p>
+-->
+      <script type="text/javascript">
+      var numberString ="";
+      var result = 0;
+      var first = true;
+     
+        var showhidecalc = function(){
+            var calc = document.getElementById("calculator_container");
+            var test = document.getElementById("plus").innerHTML.split(" ");
+            //console.log("in showshide " + document.getElementById("plus").innerHTML.split(" "));
+            if (test[1] == "Show"){
+                document.getElementById("plus").innerHTML = "&uarr; Hide calculator";
+                show(calc);
+                if (first) {
+                    //calculatorShow();
+                    first = false;
+                }
+            }
+            else{
+                document.getElementById("plus").innerHTML = "&darr; Show calculator";
+                hide(calc);
+            }
+        }
+
+          // Show an element
+          var show = function (elem) {
+            
+            var height = '270px'; //getHeight(); // Get the natural height
+            elem.classList.add('is-visible'); // Make the element visible
+            elem.style.height = height; // Update the max-height
+
+
+            // Once the transition is complete, remove the inline max-height so the content can scale responsively
+            window.setTimeout(function () {
+                VLE.resize_iframe();
+            }, 350);
+
+            };
+
+            // Hide an element
+            var hide = function (elem) {
+
+            // Give the element a height to change from
+            elem.style.height = elem.scrollHeight + 'px';
+
+            // Set the height back to 0
+            window.setTimeout(function () {
+                elem.style.height = '0';
+            }, 1);
+
+            // When the transition is complete, hide it
+            window.setTimeout(function () {
+                elem.classList.remove('is-visible');
+                VLE.resize_iframe();
+            }, 350);
+
+            };
+
+        window.onload = function(){
+
+// polyfill for includes for ie11
+            if (!String.prototype.includes) {
+                    String.prototype.includes = function(search, start) {
+                        'use strict';
+                        if (typeof start !== 'number') {
+                        start = 0;
+                        }
+
+                        if (start + search.length > this.length) {
+                        return false;
+                        } else {
+                        return this.indexOf(search, start) !== -1;
+                        }
+                    };
+                    }
+
+          var i,j;
+          for (j =1; j < 6; j++){
+            var chname = "choices" +j;
+            for (i = 0; i < document.getElementsByName(chname).length; i++) {
+                document.getElementById('label'+j+i).addEventListener("keydown", function(e){
+                        if (e.keyCode == 13 || e.keyCode == 32){
+                          this.click();
+                        }
+                      });
+                }
+              }
+
+              if (window.self !== window.top){
+                window.top.onkeydown = function(e){
+                    var keyboardcode;
+
+                        if (e.key !== undefined) {
+                            keyboardcode = e.key;
+                        } else if (e.keyIdentifier !== undefined) {
+                            keyboardcode = e.keyIdentifier;
+                        } else if (e.keyCode !== undefined) {
+                            keyboardcode = e.keyCode;
+                        }
+
+                       if ( keyboardcode.includes("Digit") && keyboardcode != "*"){
+                            //console.log("e.key = ", e.key);
+                            document.getElementById("number_"+keyboardcode).click();
+                        }
+                        else if(keyboardcode == "-"){
+                            document.getElementById("control_minus").click();
+                        }
+                        else if(keyboardcode == "+"){
+                            document.getElementById("control_add").click();
+                        }
+                        else if(keyboardcode == "="){
+                            document.getElementById("control_equals").click();
+                        }
+                        else if(keyboardcode == "/"){
+                            document.getElementById("control_divide").click();
+                        }
+                        else if(keyboardcode == "*"){
+                            document.getElementById("control_multiply").click();
+                        }
+                        else if(keyboardcode == "."){
+                            document.getElementById("control_dot").click();
+                        }
+                        else if(keyboardcode == "c"){
+                            document.getElementById("clearbtn").click();
+                        }
+                        else if(keyboardcode == "e"){
+                            document.getElementById("clear_entry").click();
+                        }
+                        else if (keyboardcode.includes("Numpad") ){
+
+                        }
+                     }
+              }
+
+            math.config({
+            number: 'BigNumber',      // Default type of number:
+                                        // 'number' (default), 'BigNumber', or 'Fraction'
+            precision: 64             // Number of significant digits for BigNumbers
+            });
+          }
+
+          window.onkeydown = function(e){
+               var keyboardcode;
+
+            if (e.key !== undefined) {
+                keyboardcode = e.key;
+            } else if (e.keyIdentifier !== undefined) {
+                keyboardcode = e.keyIdentifier;
+            } else if (e.keyCode !== undefined) {
+                keyboardcode = e.keyCode;
+            }
+
+            if ( keyboardcode.includes("Digit") && keyboardcode != "*"){
+                //console.log("e.key = ", e.key);
+                document.getElementById("number_"+keyboardcode).click();
+            }
+            else if ( !isNaN(keyboardcode) ){
+                //console.log("e.key = ", e.key);
+                document.getElementById("number_"+keyboardcode).click();
+            }
+            else if(keyboardcode == "-"){
+                document.getElementById("control_minus").click();
+            }
+            else if(keyboardcode == "+"){
+                document.getElementById("control_add").click();
+            }
+            else if(keyboardcode == "="){
+                document.getElementById("control_equals").click();
+            }
+            else if(keyboardcode == "/"){
+                document.getElementById("control_divide").click();
+            }
+            else if(keyboardcode == "*"){
+                document.getElementById("control_multiply").click();
+            }
+            else if(keyboardcode == "."){
+                document.getElementById("control_dot").click();
+            }
+            else if(keyboardcode == "c"){
+                document.getElementById("clearbtn").click();
+            }
+            else if(keyboardcode == "e"){
+                document.getElementById("clear_entry").click();
+            }
+            else if (keyboardcode.includes("Numpad") ){
+
+            }
+
+          }
+
+          //https://codepen.io/Killuminati/pen/grQxXE :
+
+    'use strict';
+    // result
+    var result;
+    // current number
+    var currNum,txtNum;
+   // current number
+   var lastNum;
+    // current number
+    var lastBtn;
+    //try to deal with brackets
+    var inBrackets = false;
+          var lb=0, rb=0;
+     // prev result
+    var prevResult;
+    // history
+    var sumhistory = "";
+    //mymaths
+    var mymaths = "";
+    var history;
+    // prev btn pressed
+    var prevBtn;
+    // math operation
+    var mathOp;
+    // prev math operation
+    var prevMathOp, prevMath, mathbtn;
+    // math operation counter
+    var mathOpCount;
+    // math op pressed?
+    var mathOpPress;
+    // init
+    var isInit;
+    // main screen
+    var mainScreen = document.querySelector('#main');
+    // history screen
+    var historyScreen = document.querySelector('#historydisplay');
+
+    // attach click events to buttons
+    Array.prototype.forEach.call(document.querySelectorAll('.button'), function(btn) {
+        btn.addEventListener('click', function(e) {
+            // `e.currentTarget` or `this`
+            var btnClicked = e.currentTarget.getAttribute('data-value');
+            input(btnClicked);
+        });
+    });
+
+    // initialize
+    function init() {
+        sumhistory = '';
+        result = null;
+        currNum = 0;
+        txtNum = '';
+        lastNum = 0;
+        prevBtn = null;
+        mathOp = null;
+        prevMathOp = null;
+        prevMath = null, mathbtn = null;
+        mathOpCount = 0;
+        mymaths = '';
+        mathOpPress = false;
+        isInit = true;
+        updateMainScreen(0);
+        updateHistoryScreen(sumhistory);
+    }
+
+    //
+    function input(btn) {
+
+        if (btn == 'C'){
+            prevBtn = null;
+            currnum = 0;
+            result = 0;
+        }
+
+        if (btn =="(") { lb++;}
+        if (btn == ")") {rb++;}
+        if (lb > rb){ inBrackets = true}
+        else{
+            inBrackets = false;
+        }
+
+        if (btn != 'CE' && btn != 'C') {
+            lastBtn = btn;
+            if (btn == '/') txtNum = "/";//"&divide;";
+            else if (btn == '*') txtNum = "*";//&times;";
+            else if( btn == '%') txtNum = prevBtn;
+            else if( btn == '-') txtNum = '-';
+            else if( btn == '+') txtNum = '+';
+        }
+
+        if (prevBtn === '=' && !isNaN(btn)){
+            //console.log("CLEAR HISTORY??? + INIT");
+            init();
+        }
+
+        if(isNaN(prevBtn) && btn === '.' ){
+               currNum =  '0.';
+        }
+
+        if(isNaN(prevBtn) ){
+            lastNum = currNum;
+         }
+
+        // copy prev math op
+        if (!isNaN(prevBtn) && btn !== '=' && btn !== 'C' && btn !== 'CE' && btn !== 'CS' && btn !== '.') {
+            prevMathOp = mathOp;
+            prevMath = mathbtn;
+        }
+
+        switch(btn) {
+            case '+': mathOpPress = true; mathOp = addition; mathbtn = '+';break;
+            case '-': mathOpPress = true; mathOp = subtraction;   mathbtn = '-'; if (prevBtn == '-'){mathOp = addition; mathbtn = '+'; }break;
+            case '/': mathOpPress = true; mathOp = division; mathbtn = '/';break;
+            case '*': mathOpPress = true; mathOp = multiplication; mathbtn = '*';break;
+            case '1/x': mathOpPress = true; mathOp = reciprocal; mathbtn = '1/x';break;
+            case '^': mathOpPress = true; mathOp = "" /*power*/; mathbtn = '^';break;
+            case 'C': init(); break;
+        }
+
+        handler(btn);
+
+
+        var fontSize = parseFloat(mainScreen.style.fontSize);
+
+        updateHistoryScreen(sumhistory);
+
+    }
+
+    //
+    function handler(btn) {
+         //console.log("in handler(btn ", btn, ") ", prevBtn, " result = ", result, sumhistory);
+
+        if (prevBtn === "="){
+            sumhistory = '';
+            if (!isNaN(btn) || btn === '.') {
+                mymaths = '';
+            }
+            else{ 
+                mymaths = result;
+            }
+            //prevBtn = btn;
+            //updateMainScreen(newresult); console.log(" --- updating mainscreen ", newresult);
+            updateHistoryScreen(sumhistory);
+        }
+        
+        // return if C wasn't pressed when divide by zero was done
+        if (btn !== 'C' && result === 'Result is undefined' || result === 'Cannot divide by zero') {
+            return;
+        }
+
+        // update history
+        /*if (btn !== '=' && btn !== 'C' && btn !== 'CE' && btn !== 'CS') {
+            //history = (isNaN(prevBtn) && isNaN(btn)) ? history.slice(0, -1) + btn : history + btn;
+        }*/
+
+        // btn clicked is `Number` or `.`
+        if (!isNaN(btn) || btn === '.') {
+            sumhistory = sumhistory + btn;
+            mymaths = mymaths + btn;
+          //  console.log("adding button to curnum ", currNum, " sumhistory = " , sumhistory, result, mymaths);
+
+            if (btn === '.' && /^\d+$/.test(currNum)) {
+                // ie if btn = '.' and currNum contains only number chars (\d+) , from begin (^) to end ($) of the string
+                 currNum = currNum + btn;
+
+           } else if (!isNaN(btn)) {
+ 
+                currNum = (!isNaN(prevBtn) && prevBtn !== null && mainScreen.value !== '0') || prevBtn === '.'|| prevBtn === 'CE' ? currNum + btn : btn;
+            }
+            mathOpPress = false;
+            updateMainScreen(currNum); 
+        // btn clicked is `Sign`
+        } else {
+            if (btn !== 'C' && btn !== 'CE') {
+                
+                if ( btn ==='*' ){
+                        sumhistory = sumhistory + '&times;';
+                    }
+                    else if ( btn ==='/' ){
+                        sumhistory = sumhistory + '&divide;';
+                    }               
+                    else if ( btn ==='^' ){
+                       /* if (prevBtn ==")") {
+                            sumhistory = sumhistory + mainScreen.value + btn;
+                        }
+                        else{ */
+                            if (sumhistory.length ==0){ sumhistory = result+ sumhistory + btn;}
+                            else{ sumhistory =  sumhistory + btn;}
+                       // }
+                    }                   
+                    else if (btn == "%") {mymaths = mymaths +  "/100"; sumhistory = sumhistory + '%'}                                      
+                    else if (btn == "1/x") { 
+                      /*  if (prevMath == "^"){   
+                           // console.log("MYMATHS = ", mymaths, prevBtn);
+                            mymaths = mymaths.slice(0, mymaths.length - currNum.length);
+                            mymaths = mymaths + "-" + currNum;
+                            sumhistory = sumhistory.slice(0, sumhistory.length - currNum.length);
+                            sumhistory = sumhistory + "-" + currNum;
+                        }
+                        else{                         
+                            if (prevBtn ==")" && !inBrackets){
+                             //   console.log(" --- TEST1 ", sumhistory, mymaths);
+                                        var testhistory = sumhistory.slice(sumhistory.lastIndexOf("("), sumhistory.length);
+                                        sumhistory = sumhistory.slice(0, sumhistory.lastIndexOf("(")) + "(1/" + testhistory+")";
+                                        var testmaths = mymaths.slice(mymaths.lastIndexOf("("), mymaths.length);
+                                        mymaths = mymaths.slice(0, mymaths.lastIndexOf("(")) + "(1/" + testmaths+")";
+                              //          console.log(" !! TEST ", testhistory, sumhistory, mymaths, currNum);
+                               }
+                               else{
+                                mymaths = mymaths +"^-1"; 
+                                sumhistory = sumhistory + "1/" + result;
+                               }
+                        
+                        }
+                        console.log(" in 1/x prevmaths = ", prevMath,currNum, currNum.length, mymaths);
+                       */ }                                      
+                    else{
+                        sumhistory = sumhistory + btn ;
+                    }
+
+                    if (btn !== '=' && btn !== '1/x' && btn !== '%') {
+                        mymaths = mymaths +btn ; 
+                    } 
+                    //console.log(" ----- in handler btn not a digit mymaths = ", mymaths, ", sumhistory ", sumhistory );
+            }
+
+            if (prevBtn ==="=" ){ 
+                currNum = result;               
+            }
+            // update history
+            if (btn === '-' || btn === '+' || btn === '*' || btn === '/'|| btn === '(' ) {
+                // for example, when `-` is pressed, add `0 -` to history screen
+                if ((prevBtn === null /*|| prevBtn === '='*/) && !isInit) {
+
+                        sumhistory = sumhistory + btn;
+                        mymaths = mymaths + btn;
+
+                    //sumhistory = '0' + btn;
+                   // console.log("HISTORY 1 = ", sumhistory);
+                    mathOpCount++;
+                }
+
+                if (!historyScreen.value.length && mainScreen.value.length && mainScreen.value != 0) {
+                    sumhistory = mainScreen.value + btn;
+                  //  console.log("HISTORY 2 = ", sumhistory);
+                }
+            }
+
+            // if math op was pressed and result is null
+            if (mathOp && result === null) {
+                result = Number(currNum);
+            }
+
+            // count percents
+            if (btn === '%') {
+                //sumhistory = sumhistory + '&#37;';//btn; //history.slice(0, -(currNum.length + 1));
+                var showNum = percentage(currNum);
+                //currNum = percentageresult(currNum, result);
+                //console.log("In % ", showNum, ", " , result , ", ", currNum,prevMath, mathbtn,prevMathOp,mathOp);
+                //history += currNum + ' ';
+               // if (mathbtn == '/' || mathbtn == '*') {
+                    updateMainScreen(showNum); currNum = showNum;
+                   // mymaths = mymaths + currNum;
+                //    }
+                //else { updateMainScreen(currNum); }
+                
+            // count square or square root
+            } else if (btn === 'sqr' || btn === 'sqrt' || btn === '1/x') {
+               // if ()
+              // console.log("!!!!!  In 1/x ", btn, prevBtn, mymaths, sumhistory, prevMathOp);
+               if (prevBtn ==")" && !inBrackets){
+                    var split = sumhistory.slice(sumhistory.lastIndexOf("("), sumhistory.length);
+                    testhistory = "("+split[split.length-1] ; 
+                    sumhistory = sumhistory.slice(0, sumhistory.lastIndexOf("(")) + "1/" + testhistory;
+                //    console.log("!! in 1/x testmaths = ", testhistory, sumhistory, currNum);
+
+                  /*  sumhistory = sumhistory.slice(0, -(currNum.length + btn.length)) + (btn === '1/x' ? '1/(' + currNum + ') ' : btn + '(' + currNum + ') ');
+                  mymaths = mymaths.slice(0, -(currNum.length + btn.length)) + (btn === '1/x' ? '1/(' + currNum + ') ' : btn + '(' + currNum + ') ');
+                  currNum = (btn === 'sqr') ? square(currNum) : (btn === 'sqrt') ? squareRoot(currNum) : fraction(currNum);*/
+               }
+               else if (prevMath != "^"){   
+                  sumhistory = sumhistory.slice(0, -(currNum.length + btn.length)) + (btn === '1/x' ? '1/(' + currNum + ') ' : btn + '(' + currNum + ') ');
+                  mymaths = mymaths.slice(0, -(currNum.length + btn.length)) + (btn === '1/x' ? '1/(' + currNum + ') ' : btn + '(' + currNum + ') ');
+                  currNum = (btn === 'sqr') ? square(currNum) : (btn === 'sqrt') ? squareRoot(currNum) : fraction(currNum);
+               }
+                if (numberprecision(currNum) > 12 ){
+                    currNum = currNum.toPrecision(12);
+                }
+                
+                updateMainScreen(currNum); 
+                updateHistoryScreen(sumhistory);
+            }
+
+            // count result
+            if (btn === '=') {
+                // if math op exists
+              //   console.log("mymaths = " , mymaths);
+                var newresult ;
+                
+                try {
+                    newresult = math.evaluate(mymaths);
+                    //sumhistory = '';
+                   // mymaths = '';
+                   prevBtn = btn;
+                   var updatenum;
+                //   console.log(" newresult is int ",newresult.isInteger(),newresult.precision());
+                   
+                        result = newresult;
+                        if (newresult.precision() >12){
+                             result = newresult.toPrecision(12);
+                             updatenum = newresult.toPrecision(12);
+                        }
+                        else{
+                            updatenum = newresult.toString();
+                             }
+                    //    console.log(" NEW RESULT ", newresult, newresult.toString(), newresult.precision(),newresult.toPrecision(9));
+                  
+                    updateMainScreen(updatenum);
+                    //console.log("---- updating mainscreen line 496 ", updatenum);
+                    updateHistoryScreen(sumhistory);
+                    result = updatenum;
+                    mathOpCount = 0;
+                    return;
+                }
+                catch(e){
+                    //console.log("!! TRYING TO FIND RESULT GIVES error ", mymaths, e, sumhistory);
+                }
+                 //   console.log("----------------------!!!!!! function ", mymaths, " = " ,newresult );
+                    
+               /*if (mathOp) {
+                    mathOpCount = 0;
+                    // if last button pressed is `mathOperation`
+                    // like `+, - etc.` before `=` was pressed
+                    if (mathOpPress) {
+                        console.log("if last button pressed is `mathOperation`");
+                        mathOp(prevResult);
+                    // if last button pressed is `digit` before `=` was pressed
+                    } else {
+                        console.log("if last button pressed is `digit` before `=` was pressed");
+                        mathOp(Number(currNum));
+                    }
+ 
+                    sumhistory = '';
+                    mymaths = '';
+
+                    prevBtn = btn;
+                    updateMainScreen(newresult); console.log(" --- updating mainscreen ", newresult);
+                    updateHistoryScreen(sumhistory);
+
+                    return;
+                } */
+            }
+
+            // count math ops
+            // if sign was pressed and prev btn isn't sign and except some buttons
+           // console.log("-- Counting mathops ", btn, prevBtn, mathOpCount);
+            if (isNaN(btn) && (!isNaN(prevBtn) || prevBtn === '%' || prevBtn === 'sqr' || prevBtn === 'sqrt' || prevBtn === '1/x' || prevBtn === 'C') &&
+                btn !== '=' && btn !== 'C' && btn !== 'CE' && btn !== 'CS' && btn !== '.' && btn !== '%' && btn !== 'sqr' & btn !== 'sqrt' && btn !== '1/x') {
+                mathOpCount++;
+            }
+
+            // count result in row
+           // console.log("-- mathopCount ", mathOpCount, currNum, result,btn,prevBtn);
+            if (mathOpCount >= 2 && (!isNaN(prevBtn) || prevBtn === 'sqrt' || prevBtn === 'sqr' || prevBtn === '1/x' || prevBtn === '%' || btn == ')') && btn !== '%' && btn !== 'CE' && btn !== 'CS' && btn !== '(' ) {
+               // console.log("in update mathop 2 ", prevBtn, btn, " result = " , result, ", MYMATHS = ", mymaths);
+                var testmaths;
+                if (btn == ")") {
+                    var split = mymaths.split("(");
+                    testmaths = "("+split[split.length-1] ; 
+                }
+                else { testmaths = mymaths.slice(0, mymaths.length -1); }
+
+                var printresult = result;
+                //prevMathOp(Number(currNum));
+              //  console.log(" --- prevMathOp ", inBrackets, currNum, testmaths, typeof testmaths);
+
+                if (!inBrackets){ 
+                    var newnum;
+                    try { 
+                        printresult = math.evaluate(testmaths);
+                        if (Number.isInteger(printresult.toNumber()) ){
+                            var thing = printresult.toNumber();
+                            result = printresult.toNumber();
+                            newnum = printresult.toString();
+                        }
+                        else{ 
+                            result = printresult;
+                            
+                            if (printresult.precision() >12){
+                                result = printresult.toPrecision(12);
+                                newnum = printresult.toPrecision(12);
+                            }
+                            else{
+                                newnum = printresult.toString();
+                                }
+                        }
+                    }
+                    catch (e){console.log("trying to evaluate error e ", e); return;}
+                    updateMainScreen(newnum); 
+                }
+            }
+            currNum = currNum.toString();
+            
+            if (btn === 'CE' && sumhistory.length > 0) {
+                if (lastBtn == "/" || lastBtn =="*" || lastBtn =="-" || lastBtn =="+" || lastBtn =="%"){
+                    sumhistory = sumhistory.slice(0, -(txtNum.length));
+                    mymaths = mymaths.slice(0, -(txtNum.length));
+                }
+                else{
+                    currNum = currNum.slice(0, -(1));
+                    sumhistory = sumhistory.slice(0, -1);
+                    mymaths = mymaths.slice(0, -1);
+                     currNum = Number(currNum);
+                 }
+                if (lastBtn =="%") {
+                    currNum = currNum*100;
+                }
+                else {
+                   // currNum = '0';
+                }
+                updateMainScreen(currNum);  //console.log(" --- updating mainscreen ", currNum);
+            } else if (btn === 'CS') {
+                if (result != mainScreen.value) {
+                    currNum = currNum.slice(0, -1);
+                    sumhistory = '';//history.slice(0, -1);
+                    if (!currNum.length) {
+                        currNum = '0';
+                    }
+                    updateMainScreen(currNum);// console.log(" --- updating mainscreen ", currNum);
+                } else {
+                    return;
+                }
+            }
+
+            if (result !== null && btn !== 'CE' && btn !== 'CS') {
+                updateHistoryScreen(sumhistory);
+            }
+        }
+       // console.log("setting previous button from ", prevBtn, " to ", btn);
+
+        prevBtn = btn;
+        prevResult = result;
+        isInit = false;
+    }
+
+    function updateMainScreen(val) {
+        val = String(val);
+
+        mainScreen.value = val;
+    }
+
+    function updateHistoryScreen(sumhistory) {
+       // historyScreen.value = sumhistory.toString();
+        historyScreen.innerHTML = sumhistory;
+    }
+
+    function addition(val) {
+        result += val;
+    }
+
+    function subtraction(val) {
+        result -= val;
+    }
+
+    function division(val) {
+        result /= val;
+    }
+
+    function multiplication(val) {
+        result *= val;
+    }
+
+    function reciprocal(val) {
+        result = 1/val;
+    }
+
+    function power(denom, val) {
+        result = Math.pow(denom,val);
+    }
+
+    function square(val) {
+        return val * val;
+    }
+
+    function squareRoot(val) {
+        return Math.sqrt(val);
+    }
+
+    function percentage(val) {
+        return  val / 100;
+
+      //  return res * val / 100;
+    }
+
+    function percentageresult(val, res) {
+       return res * val / 100;
+    }
+
+    function fraction(val) {
+        return 1 / val;
+    }
+
+    function numberprecision(a) {
+        if (!isFinite(a)) return 0;
+        if (a.length == 1) return 1;
+        var e = 1, p = 0;
+        while (Math.round(a * e) / e !== a) { e *= 10; p++; }
+        return p;
+    }
+
+    init();
+
+
+
+
+</script>
+    </body>
+    </html>

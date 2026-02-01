@@ -1,0 +1,55 @@
+<svg id="trillion_bar" data-name="trillion bar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 458.33 48.51">
+    <defs>
+        <style>
+            .cls-15{font-size:14px;fill:#1f1e21;font-family:ArialMT,Arial}.cls-9{letter-spacing:.01em}.cls-13{fill:#e0eeed}.cls-15,.cls-18{letter-spacing:0}
+        </style>
+    </defs>
+    <title>
+        Shanghai
+    </title>
+    <text transform="translate(184.98 43.96) rotate(-0.01)" style="letter-spacing:-.09em;font-size:14px;fill:#1f1e21;font-family:ArialMT,Arial">
+        T<tspan x="7.33" y="0" style="letter-spacing:.01em">r</tspan><tspan x="12.17" y="0" style="letter-spacing:0">i</tspan><tspan x="15.25" y="0" style="letter-spacing:0">l</tspan><tspan x="18.31" y="0" style="letter-spacing:-.01em">l</tspan><tspan x="21.34" y="0" style="letter-spacing:0">i</tspan><tspan x="24.49" y="0" style="letter-spacing:0">o</tspan><tspan x="32.29" y="0" style="letter-spacing:0">n</tspan><tspan class="cls-9" x="40.02" y="0">s </tspan><tspan x="51.05" y="0" style="letter-spacing:0">U</tspan><tspan class="cls-9" x="61.11" y="0">S $</tspan>
+    </text>
+    <text transform="translate(405.35 26.94)" style="letter-spacing:.01em;font-size:14px;fill:#1f1e21;font-family:ArialMT,Arial">
+        2<tspan class="cls-9" x="7.92" y="0">2</tspan>
+    </text>
+    <text transform="translate(442.94 26.9)" style="letter-spacing:-.02em;font-size:14px;fill:#1f1e21;font-family:ArialMT,Arial">
+        2<tspan class="cls-9" x="7.54" y="0">4</tspan>
+    </text>
+    <rect class="cls-13" x="1.65" width="449.06" height="11.11"/>
+    
+    <rect x="1.65" width="93.74" height="11.11" style="fill:#ca541f"/>
+    <text class="cls-15" transform="translate(35.26 26.69)">
+        2
+    </text>
+    <text class="cls-15" transform="translate(0 26.73)">
+        0
+    </text>
+    <text class="cls-15" transform="translate(72.49 26.77)">
+        4
+    </text>
+    <text class="cls-15" transform="translate(110 27.02)">
+        6
+    </text>
+    <text class="cls-15" transform="translate(147.37 26.82)">
+        8
+    </text>
+    <text transform="translate(181.19 27.07)" style="letter-spacing:-.04em;font-size:14px;fill:#1f1e21;font-family:ArialMT,Arial">
+        1<tspan class="cls-9" x="7.3" y="0">0</tspan>
+    </text>
+    <text transform="translate(218.78 26.86)" style="letter-spacing:-.05em;font-size:14px;fill:#1f1e21;font-family:ArialMT,Arial">
+        1<tspan class="cls-18" x="7.08" y="0">2</tspan>
+    </text>
+    <text transform="translate(256.1 26.65)" style="letter-spacing:-.05em;font-size:14px;fill:#1f1e21;font-family:ArialMT,Arial">
+        1<tspan class="cls-18" x="7.13" y="0">4</tspan>
+    </text>
+    <text transform="translate(293.44 26.61)" style="letter-spacing:-.03em;font-size:14px;fill:#1f1e21;font-family:ArialMT,Arial">
+        1<tspan class="cls-18" x="7.3" y="0">6</tspan>
+    </text>
+    <text transform="translate(330.98 26.98)" style="letter-spacing:-.04em;font-size:14px;fill:#1f1e21;font-family:ArialMT,Arial">
+        1<tspan class="cls-9" x="7.21" y="0">8</tspan>
+    </text>
+    <text transform="translate(367.87 27.11)" style="letter-spacing:0;font-size:14px;fill:#1f1e21;font-family:ArialMT,Arial">
+        2<tspan class="cls-9" x="7.77" y="0">0</tspan>
+    </text>
+</svg>

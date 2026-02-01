@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/w3.css"/>
+<style>
+                .arrow_box_right {
+                    position: relative;
+                    background: #fce8b1;
+                    border: 2px solid #fce8b1;
+                    border-radius: 10px;
+                    /* padding-left:10px;padding-right:10px; */
+                    padding:10px;
+
+                }
+                .arrow_box_right:after, .arrow_box_right:before {
+                    left: 100%;
+                    top: 50%;
+                    border: solid transparent;
+                    content: " ";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                }
+
+                .arrow_box_right:after {
+                    border-color: rgba(136, 183, 213, 0);
+                    border-left-color: #fce8b1;
+                    border-width: 15px;
+                    margin-top: -15px;
+                }
+                .arrow_box_right:before {
+                    border-color: rgba(194, 225, 245, 0);
+                    border-left-color: #fce8b1;
+                    border-width: 18px;
+                    margin-top: -18px;
+                }
+
+                .feedback{
+                  font-size:12px;
+                  margin:0px;
+                }
+                /* Centered text */
+                .divcentered {
+                 
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background-size: cover;                
+                  background-position: center;
+                  background-image:    url("images/your-score-template.png");
+                }
+                .centered {
+                 
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 background-size: cover;                
+                 background-position: center;
+                 font-size:200%;
+               }
+                .centered > h4 {
+                    color: #000;
+                    font-size: 2em;
+                    font-family: sans-serif;
+                   
+                }
+                
+                .score{ font-size:200%;}
+                .scoresbox{display: table-cell;vertical-align:middle;text-align:center;height:100%;width:90%;background-image:url("images/experience.svg"); justify-content: center; background-size: contain; background-repeat: no-repeat; background-position: center;height:100%;padding-top:25px;}
+                </style>
+                <script src="vleapi.1.js"></script>
+                <script src="saver.js"></script>
+</head>
+<body>
+
+<div class="w3-container w3-light-blue">
+  <div style='width:60%;display:inline-block;vertical-align:top;'><h6>CHOOSE YOUR PLAYER </h6> </div><div style='float:right; width:35%;text-align:right;display:inline-block;vertical-align:top;'><div  id='choose_player' style='vertical-align: middle;cursor:pointer;'><b>&#923;</b></div></div>
+
+  <div class="w3-half w3-navy" id='player1' >
+    <div style='width:60%;display:inline-block;vertical-align:top;'> <h2>Emma</h2>
+   </div>
+    <div  id='player1pic' style='float:right;width:38%;text-align:right;display:inline-block;vertical-align:top;'>
+          <img src="./images/emma.png"  width='75%'/>
+     </div>
+     <div id='player1text'> <p>Emma is 27. She has a Masters in Engineering and has a passion for developing technology. Since attending a masterclass on new technologies for the environment, she has been developing her ideas for a new business venture.</p>
+     </div>
+  </div>
+
+  <div class="w3-half w3-navy"  id='player2' >
+    <div style='width:50%;display:inline-block;vertical-align:top;'> <h2>Sebastian</h2>
+    </div>
+
+    <div  id='player2pic' style='float:right;width:38%;text-align:right;display:inline-block;vertical-align:top;'>
+      <img src="./images/sebastian.jpg" width='75%'/>
+      <div></div>
+    </div>
+    <div id='player2text'>
+    <p>Sebastian is 29. After graduating, he worked as an engineer for a manufacturing company for 5 years. After discussing ideas with a colleague at work during a lunch break, he has a great idea for a new business venture. </p>
+  </div>
+</div>
+
+    <div class="hidden w3-full w3-light-blue" id='idea'>
+        <div style='width:90%;display:inline-block;vertical-align:top;margin-left:8px;'><h2>Your business idea</h2>
+    <p>You will be developing a device to convert traditional diesel-powered engines to run on recycled vegetable oil. According to the last reports by experts, the device is expected to be especially useful in emerging countries where it could take relatively more time for alternative technologies (e.g. fully electric engines) to be adopted.</p>
+     <p>Along your journey you will be assigned a business advisor to give you feedback. </p> </div>
+      </div>
+</div>
+
+
+
+      <div id='step1div' class="w3-container w3-teal hidden">
+          <div style='width:100%;display:inline-block;vertical-align:top;padding-top:10px;'>
+            <img class="responsive" src="images/step1_768px.jpg">
+            <h6>STEP 1 </h6> </div><div style='float:right; width:35%;text-align:right;display:inline-block;vertical-align:top;'><div  id='step1_expand' style='vertical-align: middle;cursor:pointer;'><b>&#923;</b></div></div>
+
+          <div id="step1text" style='width:95%;vertical-align:top;' class="hidden">
+        <p>You have been putting a lot of thought into your new business venture. You realise that, in order to move forward with your idea, you will need to build a prototype and test it.  </p>
+        <p>You&apos;ve costed this up and find that you will need &pound;10,000. You don&apos;t have this money readily available, so will have to think about borrowing the money.</p>
+        <p>Choose one of the following options and see whether your project can get on to the next step.</p>
+             </div>
+
+             <div id ="step1choices" class="w3-row-padding hidden" >
+              <div id='step1_opta' class="w3-container w3-sky-blue">
+          <div style='width:95%;display:inline-block;vertical-align:top;'><h6>You consider a bank loan, and start researching lenders <img src="images/bank.svg" style='float:right;margin-bottom:8px;' width="42" height="42"/></h6> </div>
+          <!-- <div style='float:right; width:20%;text-align:right;display:inline-block;vertical-align:top;min-width:80px;'> <label class="containerreverse">CHOOSE<input id="step1choicea" type="radio" name="step1choice" value="1"> <span class="radiobtnreverse"></span></label> </div>-->
+
+              </div>
+          <div id='step1_optb' class="w3-container w3-sky-blue">
+              <div style='width:95%;display:inline-block;vertical-align:top;'><h6>You decide to use reward-based crowdfunding <img src="images/reward_crowdfunding.svg"  style='float:right;margin-bottom:8px;'  width="42" height="42"/></h6> </div>
+              <!-- <div style='float:right; width:20%;text-align:right;display:inline-block;vertical-align:top;min-width:80px;'><label class="containerreverse">CHOOSE<input id="step1choiceb" type="radio" name="step1choice" value="4"> <span class="radiobtnreverse"></span></label> </div>-->
+
+          </div>
+          <div id='step1_optc' class="w3-container w3-sky-blue">
+              <div style='width:95%;display:inline-block;vertical-align:top;'><h6>You decide to use equity crowdfunding <img src="images/equity_crowdfunding.svg"  style='float:right;margin-bottom:8px;' width="42" height="42"/></h6> </div>
+              <!-- <div style='float:right; width:20%;text-align:right;display:inline-block;vertical-align:top;min-width:80px;'><label class="containerreverse">CHOOSE<input id="step1choicec" type="radio" name="step1choice" value="7"> <span class="radiobtnreverse"></span></label> </div> -->
+          </div>
+          </div>
+        </div>
+           
+
+        <div id='step2div' class="w3-container w3-teal hidden">
+          <div style='width:100%;display:inline-block;vertical-align:top;padding-top:10px;'>
+            <img class="responsive" src="images/step2_768px.jpg">
+              <h6>STEP 2 </h6> </div><div style='float:right; width:35%;text-align:right;display:inline-block;vertical-align:top;'><div  id='step2_expand' style='vertical-align: middle;cursor:pointer;'><b>&#923;</b></div></div>
+
+            <div id="step2text" style='width:95%;vertical-align:top;' class="hidden">
+          <p>You develop a project and the corresponding costing. Now you must find resources to make this happen. Choose one of the following options and see whether your project can get on to the next step. </p>
+               </div>
+
+               <div id ="step2choices" class="w3-row-padding hidden"  >
+                <div id='step2_opta' class="w3-container w3-sky-blue">
+                <div style='width:95%;display:inline-block;vertical-align:top;'><h6>You set up a new round of crowdfunding <img src="images/equity_crowdfunding.svg" style='float:right;margin-bottom:8px;' width="42" height="42"/></h6> </div>
+            <!-- <div style='float:right; width:20%;text-align:right;display:inline-block;vertical-align:top;min-width:80px;'> <label class="containerreverse">CHOOSE<input id="step2choicea" type="radio" name="step2choice"  value="1"> <span class="radiobtnreverse"></span></label> </div> -->
+
+                </div>
+              <div id='step2_optb' class="w3-container w3-sky-blue">
+                  <div style='width:95%;display:inline-block;vertical-align:top;'><h6>You search for a business angel <img src="images/business_angel.svg"  style='float:right;margin-bottom:8px;'  width="42" height="42"/></h6> </div>
+                  <!--<div style='float:right; width:20%;text-align:right;display:inline-block;vertical-align:top;min-width:80px;'><label class="containerreverse">CHOOSE<input id="step2choiceb" type="radio" name="step2choice" value="0"> <span class="radiobtnreverse"></span></label> </div> -->
+                  <div id="step2choiceb_text" class='hidden'>
+                      <p>You manage to get in contact with a business angel based in D&uuml;sseldorf Germany, who is interested in your idea. Here is her offer: &lsquo;I&apos;ll provide 90% of the money you need, but will take 20% ownership in your business. Agreed?&rsquo; You consider her offer.
+                        What will you decide to do? </p>
+                        <div><label class="containerreverse">You decide to accept the offer and begin to collaborate with your business angel. <input id="step2optb_1" type="radio" name="step2choiceoptb" value='7'> <span class="radiobtnreverse"></span></label>
+                        </div>
+                      <!-- <div id='step2optb_1_feedback' class="hidden"><p>Well done. Together, you receive only 90% of the funding you need to establish your business. It&apos;s taken 5 working days. You will have to think about making some savings, but you have the money. Your BA suggests that you protect your innovative idea with a patent.</p>
+                          <div class="score w3-yellow w3-twothird"><p>SCORE 7 PROCEED TO STEP 3</p></div></div>-->
+                        <div><label class="containerreverse"> You make the decision to decline the offer. <input id="step2optb_2" type="radio" name="step2choiceoptb" value='1'> <span class="radiobtnreverse"></span></label>
+                      <!-- <div id='step2optb_2_feedback' class="hidden"><p>You will be happy with 100% of the money, and only 10% ownership in your business. </p><p>
+                            Go back to the previous level and choose one of the other options.</p>
+                            <div class="score w3-yellow w3-twothird"><p>SCORE 1 <span style='float:right;cursor:pointer;' name="tryagain">CLICK HERE TO TRY AGAIN </span></p></div></div>-->
+                            </div>
+
+                        </div> 
+              </div>
+              <div id='step2_optc' class="w3-container w3-sky-blue">
+                  <div style='width:95%;display:inline-block;vertical-align:top;'><h6>You search for a venture capitalist <img src="images/venture_capitalist.svg"  style='float:right;margin-bottom:8px;' width="42" height="42"/></h6> </div>
+                  <!--<div style='float:right; width:20%;text-align:right;display:inline-block;vertical-align:top;min-width:80px;'><label class="containerreverse">CHOOSE<input id="step2choicec" type="radio" name="step2choice"  value="5"> <span class="radiobtnreverse"></span></label> </div> -->
+                  
+              </div>
+              <div id='step2_optd' class="w3-container w3-sky-blue">
+                  <div style='width:95%;display:inline-block;vertical-align:top;'><h6>You try to find a lender <img src="images/lender.svg"  style='float:right;margin-bottom:8px;' width="42" height="42"/></h6> </div>
+                  <!--<div style='float:right; width:20%;text-align:right;display:inline-block;vertical-align:top;min-width:80px;'><label class="containerreverse">CHOOSE<input id="step2choiced" type="radio" name="step2choice"  value="2"> <span class="radiobtnreverse"></span></label> </div> -->
+                
+              </div>
+              </div>
+        </div>
+              
+
+              <dialog id='feedback'>
+                <h2>Advice from business advisor</h2>
+                <div style="display:table;width:100%;">
+                <div style="display: table-row;width:100%;">
+                 <div class="preview" id="note_support_staff" style="width:70%; display: table-cell;">
+                        <div class="arrow_box_right" style=" z-index: 2; ">
+                          <div style="text-align: center;padding-top:12px;"> <button id='calladvisor' style="width:22%;margin-right:20px;vertical-align:middle;min-width:62px;"><img id="advisorface" src="images/phone.svg" style="width:30px;height:30px;">&nbsp;Get advice</button><audio id="feedbackaudio" controls  src="" type="audio/mp3" style="width:65%;vertical-align:middle;">This browser does not support mp3 audio</audio> </div>
+                          <div><button id='transcriptlink' class="smallbtn" >Show transcript</button><p id="feedbacktext" style="display:none;"></p></div>
+                        </div>    
+                  </div>
+                
+                   <div style='display: table-cell;vertical-align:middle;text-align:center;width:25%;'><img id='happyface' style='max-width: 130px;width:90%;display:none;' src="images/business-advisor_1.png"> <img id='bitwrongface' style='max-width: 130px;width:90%;display:none;' src="images/business-advisor_2.png"> <img id='wrongface' style='max-width: 130px;width:90%;display:none;' src="images/business-advisor_3.png"><img id='verywrongface' style='max-width: 130px;width:90%;display:none;' src="images/business-advisor_4.png"></div>
+                   <div class="scoresbox" id="scoresbox" style='display:none;'><div id="score" style='height:100%;padding-top:5px;' class="centered score"></div> </div>
+                 </div>  
+               
+                <div style="text-align: center;padding-top:8px;padding-bottom:8px;"> 
+                  <button id="feedbackclose" value="cancel" style="text-align: center;">Progress your project </button>
+                  <button id="feedbackrestart" value="restart" style="text-align: center;display:none;">Re-think your decision </button>
+                </div>
+              </div>
+              </dialog>
+
+              <div id='step3div' class="w3-container w3-teal hidden">
+                <div style='width:100%;display:inline-block;vertical-align:top;padding-top:10px;'>
+                  <img class="responsive" src="images/step3_768px.jpg">
+                  <h6>STEP 3 </h6> </div><div style='float:right; width:35%;text-align:right;display:inline-block;vertical-align:top;'><div  id='step3_expand' style='vertical-align: middle;cursor:pointer;'><b>&#923;</b></div></div>
+
+                  <div id="step3text" style='width:95%;vertical-align:top;margin-left:8px;' class="hidden">
+                <p>Congratulations. You have now established your business and have produced the first ten devices. You decide to bet on one of the greatest markets in emerging countries, India. This proves a good step as your device attracts the interest of a local public transportation company. They are interested in applying your device to a city bus fleet. After presenting the benefits to them, they agree on buying fifty devices.  </p>
+                <p>You are expecting an increase in demand for your product. This means you will need to expand your production. You need a new plant and more advanced machinery, which increases your working capital requirements. Should you increase your borrowing or use alternative sources of funding? Your BA warns you to be careful as this could be huge watershed for the future of your business. </p>
+                <p>What do you decide to do?</p>
+                     </div>
+
+                     <div id ="step3choices" class="w3-row-padding hidden" >
+                      <div id='step3_opta' class="w3-container w3-sky-blue">
+                  <div style='width:95%;display:inline-block;vertical-align:top;'><h6>Long-term debt with an interest rate at 4% <img src="images/longterm_debt.svg" style='float:right;margin-bottom:8px;' width="42" height="42"/></h6> </div>
+                  <!--<div style='float:right; width:20%;text-align:right;display:inline-block;vertical-align:top;min-width:80px;'> <label class="containerreverse">CHOOSE<input id="step3choicea" type="radio" name="step3choice" value="7"> <span class="radiobtnreverse"></span></label> </div> -->
+             
+                      </div>
+                  <div id='step3_optb' class="w3-container w3-sky-blue">
+                      <div style='width:95%;display:inline-block;vertical-align:top;'><h6>Short-term debt with an interest rate at 1.5% <img src="images/short_term_debt.svg"  style='float:right;margin-bottom:8px;'  width="42" height="42"/></h6> </div>
+                      <!--<div style='float:right; width:20%;text-align:right;display:inline-block;vertical-align:top;min-width:80px;'><label class="containerreverse">CHOOSE<input id="step3choiceb" type="radio" name="step3choice" value="2"> <span class="radiobtnreverse"></span></label> </div> -->
+
+                  </div>
+                  <div id='step3_optc' class="w3-container w3-sky-blue">
+                      <div style='width:95%;display:inline-block;vertical-align:top;'><h6>Finance lease <img src="images/debt_financing.svg"  style='float:right;margin-bottom:8px;' width="42" height="42"/></h6> </div>
+                      <!--<div style='float:right; width:20%;text-align:right;display:inline-block;vertical-align:top;min-width:80px;'><label class="containerreverse">CHOOSE<input id="step3choicec" type="radio" name="step3choice"> <span class="radiobtnreverse" value="5"></span></label> </div> -->
+        
+                  </div>
+                  <div id='step3_optd' class="w3-container w3-sky-blue">
+                      <div style='width:95%;display:inline-block;vertical-align:top;'><h6>Retained earnings <img src="images/retained_earnings.svg"  style='float:right;margin-bottom:8px;' width="42" height="42"/></h6> </div>
+                      <!--<div style='float:right; width:20%;text-align:right;display:inline-block;vertical-align:top;min-width:80px;'><label class="containerreverse">CHOOSE<input id="step3choiced" type="radio" name="step3choice"> <span class="radiobtnreverse"  value="1"></span></label> </div> -->
+                      <div id="step3choicec_text" class='hidden'>
+                          <p>Your decision angers your collaborator. He asks you what retained earning you think you have. </p>
+                      <p>You immediately realize that she is absolutely right. You still have to sell the devices in order to generate earnings to be retained. </p>
+                      <p>You will have to find an alternative option before you can proceed to the next phase. </p>
+                      <div class="score w3-yellow w3-twothird"><p>SCORE 1 <span style='float:right;cursor:pointer;' name="tryagain">CLICK HERE TO TRY AGAIN </span></p></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+                    
+
+
+                    <div id='step4div' class="w3-container w3-teal hidden">
+                      <div style='width:100%;display:inline-block;vertical-align:top;padding-top:10px;'>
+                        <img class="responsive" src="images/step4_768px.jpg">
+                        <h6>STEP 4 </h6> </div><div style='float:right; width:35%;text-align:right;display:inline-block;vertical-align:top;'><div  id='step4_expand' style='vertical-align: middle;cursor:pointer;'><b>&#923;</b></div></div>
+
+                        <div id="step4text" style='width:95%;vertical-align:top;margin-left:8px;' class="hidden">
+                      <p>Well done. You have produced and sold fifty devices for an Indian local transportation company. You have made a profit of &pound;105,000. </p>
+                        <p>  You are confident about the future prospects and performance of your business. You strongly believe that, at this point, you need to expand your business using external means of financing. Buying more advanced machineries and investing in R&amp;D to improve the product will be the focus of this round of expansion. You estimate that you will need &pound;600,000 this time. </p>
+                        <p>  How do you choose to proceed? If you opt for equity finance, you will need to be prepared to give up a degree of control in favour of equity. If you opt for debt financing, you will need to pay fixed repayments regardless of the performance of the business. </p>
+                           </div>
+
+                           <div id ="step4choices" class="w3-row-padding hidden" >
+                            <div id='step4_opta' class="w3-container w3-sky-blue">
+                        <div style='width:95%;display:inline-block;vertical-align:top;'><h6>You opt for debt financing. You take out a loan with a bank for the full amount of &pound;600,000. The interest rate is 10%. <img src="images/debt_financing.svg" style='float:right;margin-bottom:8px;' width="42" height="42"/></h6> </div>
+                        <!--<div style='float:right; width:20%;text-align:right;display:inline-block;vertical-align:top;min-width:80px;'> <label class="containerreverse">CHOOSE<input id="step4choicea" type="radio" name="step4choice" value="7"> <span class="radiobtnreverse"></span></label> </div> -->
+                        <div id="step4choicea_text" class='hidden'>
+                        <p>Given the available profit figures, your interest expense is &pound;60,000 (10% of 600,000). This leaves you with a profit of &pound;540,000 (&pound;600,000 - &pound;60,000).</p>
+                        <p>Your project can develop to the next phase.</p>
+                              <div class="score w3-yellow w3-twothird"><p>SCORE 7  PROCEED TO STEP 5</p></div>
+                            </div>
+                            </div>
+                          <div id='step4_optb' class="w3-container w3-sky-blue">
+                              <div style='width:95%;display:inline-block;vertical-align:top;'><h6>You opt for equity financing. You offer to sell a 10% stake in your business to a group of interested investors.<img src="images/equity_financing.svg"  style='float:right;margin-bottom:8px;'  width="42" height="42"/></h6> </div>
+                              <!--<div style='float:right; width:20%;text-align:right;display:inline-block;vertical-align:top;min-width:80px;'><label class="containerreverse">CHOOSE<input id="step4choiceb" type="radio" name="step4choice" value="2"> <span class="radiobtnreverse"></span></label> </div> -->
+                              <div id="step4choiceb_text" class='hidden'>
+                                  <p>Given the available profit figures, you will only keep 90% of your profits. This will be &pound;540,000 (90% of &pound;600,000).</p>
+                                  <p>Your project can develop to the next phase.</p>
+                                  <div class="score w3-yellow w3-twothird"><p>SCORE 7 PROCEED TO STEP 5</p></div>
+                                  </div>
+                          </div>
+                          <div id='step4_optc' class="w3-container w3-sky-blue">
+                              <div style='width:95%;display:inline-block;vertical-align:top;'><h6>You opt for a mix of the two types of financing <img src="images/mix_financing.svg"  style='float:right;margin-bottom:8px;' width="42" height="42"/></h6> </div>
+                                <!--div style='float:right; width:20%;text-align:right;display:inline-block;vertical-align:top;min-width:80px;'><label class="containerreverse">CHOOSE<input id="step4choicec" type="radio" name="step4choice"> <span class="radiobtnreverse" value="5"></span></label> </div> -->
+                              <div id="step4choicec_text" class='hidden'>
+                                  <p>You need additional and more structured information about the required return and taxation, in order to decide on the specific mix.</p>
+                              <p>You will need to reconsider your options.</p>
+                              <div class="score w3-yellow w3-twothird"><p>SCORE 5 <span style='float:right;cursor:pointer;' name="tryagain">CLICK HERE TO TRY AGAIN </span></p></div>
+                              </div>
+                          </div>
+
+                          </div>
+                      </div>
+                           
+
+                          <div id='step5div' class="w3-container w3-teal hidden">
+                            <div style='width:100%;display:inline-block;vertical-align:top;padding-top:10px;'>
+                              <img class="responsive" src="images/step5_768px.jpg">
+                              <h6>STEP 5 </h6> </div><div style='float:right; width:35%;text-align:right;display:inline-block;vertical-align:top;'><div  id='step5_expand' style='vertical-align: middle;cursor:pointer;'><b>&#923;</b></div></div>
+
+                              <div id="step5text" style='width:95%;vertical-align:top;margin-left:8px;' class="hidden">
+                            <p>This part of your journey has now come to an end</p>
+                              <p>
+                                  You have been able to establish your business, by giving it a solid base and good potential for future growth. A few big players in the automotive industry are showing serious interest in your innovative product. The future of your organization looks bright.</p>
+                              <p> Some of the choices you had to make to get to this point may have been quite difficult. As you continue to grow, you might want to consider taking on an assistant who would be able to help guide you through the financial decision-making process. This is a journey that will put you in touch a whole group of interesting and talented people. As you develop, keep an eye out for right person. </p>
+                                 </div>
+                                 <div style="padding-bottom:15px;">
+                                   <div style="display: table-row;padding-bottom:10px;">
+                                   <div class="preview" id="GOFeedback" style="width:55%; display: table-cell;">
+                                          <div class="arrow_box_right" style=" z-index: 2; ">
+                                            <h2 id='GOgroup' style="color:#000;"></h2>
+                                 
+                                          <!-- <div style="text-align: center;padding-top:12px;"><audio id="feedbackaudio" controls  src="" type="audio/mp3">This browser does not support mp3 audio</audio> </div>--> 
+                                          <p id="GOtext" style="color:#000;"></p>
+                                      </div>    
+                                    </div>
+                                     <div style='display: table-cell;vertical-align:middle;text-align:center;width:22%;'><img id='GOhappyface' style='max-width: 180px;width:100%;' src="images/business-advisor_1.png"> <img id='GObitwrongface' style='max-width: 130px;width:100%;display:none;' src="images/business-advisor_2.png"> <img id='GOwrongface' style='max-width: 130px;width:100%;display:none;' src="images/business-advisor_3.png"> </div>
+                                     <div style='display: table-cell;vertical-align:middle;text-align:center;width:23%;height:100%;background-image:url("images/your-score-template.png"); justify-content: center; background-size: contain; background-repeat: no-repeat; background-position: center;'><div id="GOscore" style='height:100%;padding-top:30px;color:#000;' class="centered score">10</div> </div>
+                                  </div>
+                                  </div>
+                          </div>
+                               
+          <!--   </div>
+  </div>-->
+  <!-- <div class="w3-container w3-yellow">
+      <div style='width:60%;display:inline-block;vertical-align:top;'><h6>YOUR SCORE </h6> </div><div style='float:right; width:35%;text-align:right;display:inline-block;vertical-align:bottom;padding-top:10px;'><div  id='total_score' style='vertical-align: middle;'><b>0</b></div></div>
+      <p></p>
+    </div> -->
+    <script src="dialog-polyfill.js"></script>
+<script>
+   var dialog = document.querySelector('dialog');
+    dialogPolyfill.registerDialog(dialog);
+  var player1 = document.getElementById("player1");
+  var player2 = document.getElementById("player2");
+  var score = document.getElementById("total_score");
+  var totalscore = 0;
+  var nextStep = "step2";
+  var marked = [false, false, false, false]; 
+  var thisstepdone = false;
+  var cfg = {};
+        var cfgObj = {};
+        var prevData, userid, datalength = 0;
+  var saver = new Saver();
+  var userdata;
+
+  var temp = {
+      data: []
+  };
+
+  VLE.resize_iframe(); 
+
+  window.onload = function(){
+   
+        user_id = 'u' + VLE.get_param('_u') || cfg.user;
+        saver.retrieve({
+                user: false,
+                names: [user_id],
+                callback: function(userData) {
+                    if (userData !== '') {
+                        prevData = {};
+                        prevData[user_id] = userData[user_id];
+                       if (userData[user_id]  !== undefined && userData[user_id].length > 0) { 
+                          temp.data[user_id] = JSON.parse(userData[user_id]);
+                        
+                          if (temp.data[user_id].length > 0) {                           
+                            datalength = temp.data[user_id].length + 1;}
+                          else {
+                            datalength = 0;
+                          }
+                        } else{
+                          temp.data[user_id] = [];datalength = 0;
+                        }
+                    } else {
+                      temp.data[user_id] = [];
+                      datalength = 0;
+                      savedData = [];
+                    }
+                    temp.data[user_id][datalength] = [];
+                 }
+            });
+            
+          player1.addEventListener("click", function(e){
+                            // console.log("keycode = " + e.keyCode);
+                            document.getElementById("step1div").classList.remove("hidden");
+                            document.getElementById("idea").classList.remove("hidden");
+                            document.getElementById("step1text").classList.remove("hidden");
+                            document.getElementById("step1choices").classList.remove("hidden");
+                            document.getElementById("player2pic").style.display = "none";
+                            document.getElementById("player2text").style.display = "none";
+                            document.getElementById("player2").classList.add("off");
+                            document.getElementById("player1").style.opacity = "1.0";
+                            document.getElementById("player1pic").style.display = "inline-block";
+                            document.getElementById("player1text").style.display = "inline-block";
+                            temp.data[user_id][datalength].push(['player1',new Date()]); 
+                            
+                             save();
+                            VLE.resize_iframe();
+                                  
+          });
+
+          player2.addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                     document.getElementById("step1div").classList.remove("hidden");
+                     document.getElementById("idea").classList.remove("hidden");
+                     document.getElementById("step1text").classList.remove("hidden");
+                     document.getElementById("step1choices").classList.remove("hidden");
+                     document.getElementById("player1pic").style.display = "none";
+                     document.getElementById("player1").classList.add("off");
+                            document.getElementById("player2").style.opacity = "1.0";
+                           document.getElementById("player1text").style.display = "none";
+                            document.getElementById("player2pic").style.display = "inline-block";
+                            document.getElementById("player2text").style.display = "inline-block";
+                            temp.data[user_id][datalength].push(['player2',new Date()]); 
+                            save();
+                            VLE.resize_iframe();
+                                  
+
+          });
+
+          document.getElementById("transcriptlink").addEventListener("click", function(e){
+              var transcript = document.getElementById("feedbacktext");
+              var linkbtn = e.target;
+              if (transcript.style.display == "none"){ 
+                transcript.style.display= "inline-block";
+                linkbtn.innerHTML = "Hide transcript";                         
+                }
+              else{
+                transcript.style.display= "none";
+                linkbtn.innerHTML = "Show transcript";
+                temp.data[user_id][datalength].push(['transcript',new Date()]); 
+               // save();
+                            
+              }
+          });
+          
+          var playing = false;
+          document.getElementById("calladvisor").addEventListener("click", function(e){ 
+             var audiofeedback = document.getElementById("feedbackaudio");
+             temp.data[user_id][datalength].push(['calladvisor',new Date()]); 
+             //save();
+                            
+              if (!playing) { audiofeedback.play(); playing = true;console.log("playing");document.getElementById("calladvisor").classList.add("playing");}
+              else{ audiofeedback.pause();playing = false;console.log("pause");document.getElementById("calladvisor").classList.remove("playing");}
+          });
+
+          document.getElementById("step1_expand").addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                     var step1text = document.getElementById("step1text");
+                     if (step1text.classList.contains("hidden")){
+                          step1text.classList.remove("hidden");
+                          document.getElementById("step1_expand").innerHTML="<b>&#923;</b>";
+                          document.getElementById("step1choices").classList.remove("hidden");
+                     }
+                     else{
+                      step1text.classList.add("hidden");
+                      document.getElementById("step1_expand").innerHTML="<b>V</b>";
+                          document.getElementById("step1choices").classList.add("hidden");
+                     }
+                     VLE.resize_iframe();
+                                  
+            });
+
+          document.getElementById("step2_expand").addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                     var step2text = document.getElementById("step2text");
+                     if (step2text.classList.contains("hidden")){
+                          step2text.classList.remove("hidden");
+                          document.getElementById("step2_expand").innerHTML="<b>&#923;</b>";
+                          document.getElementById("step2choices").classList.remove("hidden");
+                        }
+                     else{
+                      step2text.classList.add("hidden");
+                      document.getElementById("step2_expand").innerHTML="<b>V</b>";
+                          document.getElementById("step2choices").classList.add("hidden");
+                     }
+                     VLE.resize_iframe();
+                                  
+            });
+
+               document.getElementById("step3_expand").addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                     var step4text = document.getElementById("step3text");
+                     if (step3text.classList.contains("hidden")){
+                          step3text.classList.remove("hidden");
+                          document.getElementById("step3_expand").innerHTML="<b>&#923;</b>";
+                          document.getElementById("step3choices").classList.remove("hidden");
+                        }
+                     else{
+                      step3text.classList.add("hidden");
+                      document.getElementById("step3_expand").innerHTML="<b>V</b>";
+                          document.getElementById("step3choices").classList.add("hidden");
+                     }
+                     VLE.resize_iframe();
+                                  
+              });
+
+
+                document.getElementById("step4_expand").addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                     var step4text = document.getElementById("step4text");
+                     if (step4text.classList.contains("hidden")){
+                          step4text.classList.remove("hidden");
+                          document.getElementById("step4_expand").innerHTML="<b>&#923;</b>";
+                          document.getElementById("step4choices").classList.remove("hidden");
+                        }
+                     else{
+                      step4text.classList.add("hidden");
+                      document.getElementById("step4_expand").innerHTML="<b>V</b>";
+                          document.getElementById("step4choices").classList.add("hidden");
+                     }
+                     VLE.resize_iframe();
+                                  
+                });
+
+                document.getElementById("step5_expand").addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                     var step5text = document.getElementById("step5text");
+                     if (step5text.classList.contains("hidden")){
+                          step5text.classList.remove("hidden");
+                          document.getElementById("step5expand").innerHTML="<b>&#923;</b>";
+                          document.getElementById("step5choices").classList.remove("hidden");
+                        }
+                     else{
+                      step5text.classList.add("hidden");
+                      document.getElementById("step5_expand").innerHTML="<b>V</b>";
+                          
+                     }
+                     VLE.resize_iframe();                                 
+                });
+
+                 document.getElementById("choose_player").addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                     var step1text = document.getElementById("player_text");
+                        if (step1text.classList.contains("hidden")){
+                          step1text.classList.remove("hidden");
+                          document.getElementById("choose_player").innerHTML="<b>&#923;</b>";
+                         // document.getElementById("idea").classList.remove("hidden");
+                        }
+                        else{
+                          step1text.classList.add("hidden");
+                          document.getElementById("choose_player").innerHTML="<b>V</b>";
+                        }
+                  });
+
+                     var step1score = [1, 4, 7];
+                    var feedbackStepRestart = function(e){
+                              //console.log("in restart button click ", document.getElementById("feedback"));
+                             document.getElementById("scoresbox").style.display = 'none';
+                             document.getElementById('note_support_staff').style.width = '70%';
+                             document.getElementById("happyface").style.display = 'none';
+                             document.getElementById("bitwrongface").style.display = 'none';
+                               document.getElementById("wrongface").style.display = 'none';
+                              document.getElementById("verywrongface").style.display = 'none';
+                              var transcript = document.getElementById("feedbacktext");
+                              console.log("In rethink?? ", transcript);
+                              if (transcript.style.display != "none"){
+                                  transcript.style.display= "none";
+                                  document.getElementById("transcriptlink").innerHTML = "Show transcript";
+                                   
+                                }
+                              document.getElementById("feedback").close();
+                              document.getElementById("step1_optb").classList.remove("off");
+                              document.getElementById("step1_optc").classList.remove("off");
+                              temp.data[user_id][datalength].push(['restart',new Date()]); 
+                             // save();                           
+                            }
+
+                     document.getElementById("step1_opta").addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                        if (!document.getElementById("step1_opta").classList.contains("off")){
+                           document.getElementById("step1_optb").classList.add("off");
+                           document.getElementById("step1_optc").classList.add("off");
+                           document.getElementById("wrongface").style.display = 'block';
+                              document.getElementById("feedbacktext").innerHTML = " <p>It isn&apos;t easy to find a bank that will fund your prototype, as you can&apos;t prove that you are credit-worthy and low risk. This means  you can&apos;t prove  you can repay the loan, and you don&apos;t have any collateral. </p> <p>Unfortunately, the implication here is that a bank loan is not a viable option.</p> <p>You&apos;ve learned a great deal about bank loans, but you need to go back and consider other options.</p>";
+                          document.getElementById("feedbackaudio").src = "audio/b294_2020d_Box_5.mp3";
+                          thisstepdone = false;                  
+                           totalscore = totalscore - 2;             
+                           temp.data[user_id][datalength].push(['step1opta',totalscore,new Date()]); 
+                          // save();
+                            
+                          document.getElementById("score").innerHTML = totalscore;  
+                          document.getElementById("feedbackrestart").style.display = 'block';     
+                          document.getElementById("feedbackrestart").addEventListener("click", feedbackStepRestart);
+                          document.getElementById("feedbackclose").style.display = 'none';
+                          document.getElementById("feedback").showModal(); 
+                        }                       
+                      });
+
+                     /* document.getElementById("feedbackrestart").addEventListener("click", function(e){
+                        console.log("in restart button click ", document.getElementById("feedback"));
+                        document.getElementById("feedback").close();
+                        window.location.href = window.location.pathname + window.location.search + window.location.hash;
+                      });*/
+
+                      document.getElementById("feedbackclose").addEventListener("click", function(e){
+                                  //console.log("in close button click ", totalscore, document.getElementById("feedback"));
+                                  temp.data[user_id][datalength].push(['progressproject',new Date()]);    
+                                  var transcript = document.getElementById("feedbacktext");
+                                    console.log("In rethink?? ", transcript);
+                                    if (transcript.style.display != "none"){
+                                      transcript.style.display= "none";
+                                      document.getElementById("transcriptlink").innerHTML = "Show transcript";
+                                      
+                                    }                         
+                                  // save();
+                                  if (document.getElementById("feedback").open) document.getElementById("feedback").close();
+                                  
+                                  if (playing) { document.getElementById("feedbackaudio").pause(); playing = false; } 
+                                  
+                                  document.getElementById("scoresbox").style.display = 'none';
+                                  document.getElementById("bitwrongface").style.display = 'none';
+                                  document.getElementById("scoresbox").style.display = 'none';
+                                  document.getElementById("wrongface").style.display = 'none';
+                                  document.getElementById("verywrongface").style.display = 'none';
+                                  document.getElementById("happyface").style.display = 'none';
+                                  document.getElementById('note_support_staff').style.width = '70%';
+                          
+                                  if(thisstepdone){
+                                      document.getElementById(nextStep+"div").classList.remove("hidden");
+                                      //console.log("showing nextStep?");
+                                     // console.log("removing hidden from " + nextStep);
+                                      document.getElementById(nextStep+"text").classList.remove("hidden");
+                                      if (nextStep != "step5"){ 
+                                        document.getElementById(nextStep+"choices").classList.remove("hidden");                                  
+                                      }
+                                      VLE.resize_iframe();
+                                      document.getElementById(nextStep+"div").scrollIntoView(); 
+                                      thisstepdone = false; 
+                                  }
+                                });
+
+                        document.getElementById("feedbackrestart").addEventListener("click", feedbackStepRestart);
+
+                      document.getElementById("step1_optb").addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                        if (!document.getElementById("step1_optb").classList.contains("off")){
+                          document.getElementById("bitwrongface").style.display = 'block';
+                               document.getElementById("step1_opta").classList.add("off");
+                           document.getElementById("step1_optc").classList.add("off");
+                          document.getElementById("feedbacktext").innerHTML = "<p>You think about getting the  &lsquo;crowd&rsquo; to fund your project in return for &lsquo;early bird&rsquo;  discounted versions of your product, or for related &lsquo;gifts&rsquo;.</p> <p>In reality, producing rewards and incentives will be expensive, and take a long time to produce. </p><p>This was a great learning curve, though. You realise that you will need to find another, more realistic source of funding, if you want to move to the next step.</p>";                         
+                          totalscore = totalscore - 1;       
+                          temp.data[user_id][datalength].push(['step1optb',totalscore,new Date()]); 
+                          //save();
+                            
+                         thisstepdone = false;                  
+                          document.getElementById("score").innerHTML = totalscore;            
+                          document.getElementById("feedbackrestart").style.display = 'block';     
+                          document.getElementById("feedbackclose").style.display = 'none';
+                          document.getElementById("feedbackrestart").removeEventListener("click", feedbackStepRestart);
+                           feedbackStepRestart =  function(e){
+                              //console.log("in restart button click ", document.getElementById("feedback"));
+                              if (document.getElementById("feedback").open) document.getElementById("feedback").close();
+                                  document.getElementById("bitwrongface").style.display = 'none';
+                                  document.getElementById("scoresbox").style.display = 'none';
+                                  document.getElementById('note_support_staff').style.width = '70%';
+                                  document.getElementById("wrongface").style.display = 'none';
+                                  document.getElementById("verywrongface").style.display = 'none';
+                                  document.getElementById("happyface").style.display = 'none';
+
+                              document.getElementById("step1_opta").classList.remove("off");
+                              document.getElementById("step1_optc").classList.remove("off");
+                              thisstepdone = false;                  
+                             }
+                          document.getElementById("feedbackrestart").addEventListener("click", feedbackStepRestart);
+                          document.getElementById("feedbackaudio").src = "audio/b294_2020d_Box_6.mp3";
+                          document.getElementById("feedback").showModal();
+                        }
+                      });
+                      
+                      document.getElementById("step1_optc").addEventListener("click", function(e){
+                      // console.log("keycode = " + e.keyCode);
+                      if (!document.getElementById("step1_optc").classList.contains("off")){
+                        document.getElementById("happyface").style.display = 'block';                        
+                           document.getElementById("step1_optb").classList.add("off");
+                           document.getElementById("step1_opta").classList.add("off");
+                          document.getElementById("feedbacktext").innerHTML =       "<p>This option allows you to get the funding you need from the &apos;crowd&apos;, in return for a portion or share of the capital. </p> <p>There is a risk, though, that if you don&apos;t make a profit, your investors will lose some, or all, of their investment.</p> <p>After campaigning for 3 months you receive 80% of the funding you need, but you can still fund your prototype by using cheaper materials.</p> <p>Congratulations! You manage to complete your first fully working prototype after 6 months, and your competitors are starting  to show an interest in your idea.</p>";
+                          document.getElementById("feedbackaudio").src = "audio/b294_2020d_Box_7.mp3";
+                          if (!marked[0]){
+                              totalscore = totalscore + 7;   
+                              marked[0] = true;   
+                              thisstepdone = true;                  
+                         } 
+                         temp.data[user_id][datalength].push(['step1optc',totalscore,new Date()]); 
+                         //save();
+                            
+                                               
+                          document.getElementById("feedbackrestart").style.display = 'none';     
+                          document.getElementById("feedbackclose").style.display = 'block';
+                          document.getElementById("scoresbox").style.display = "table-cell";
+                          document.getElementById('note_support_staff').style.width = '55%';
+                          document.getElementById("score").innerHTML = totalscore;            
+                         document.getElementById("feedback").showModal();
+                         /* document.getElementById("step2div").classList.remove("hidden");
+                          console.log("showing step2?");
+                          document.getElementById("step2text").classList.remove("hidden");
+                          document.getElementById("step2choices").classList.remove("hidden");*/
+                          
+                        }
+                      });
+
+                      var step2score = [1, 0, 5, 2];
+                      var step3score = [7, 2, 5, 1];
+                      var step4score = [7, 7, 5];
+
+
+                      document.getElementById("step2_opta").addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                        if (!document.getElementById("step2_opta").classList.contains("off")){
+                          document.getElementById("verywrongface").style.display = 'block';                        
+                          document.getElementById("step2_optb").classList.add("off");
+                           document.getElementById("step2_optc").classList.add("off");
+                           document.getElementById("step2_optd").classList.add("off");
+                           document.getElementById("feedbacktext").innerHTML = " <p>Although your first round of crowdfunding went well, you are struggling to reach a large audience as your target audience is quite select.</p> <p>After several months, you are still only at 20% of the total money needed. Then you find out that ABC Motors have stolen your idea, and are about to launch a very similar device.</p> <p>You have both lost your idea and your project. Game over. Fortunately, you still have a chance to have another go. If you&apos;ve learned from your experience, you will make better decisions next time.</p>";
+                          document.getElementById("feedbackaudio").src = "audio/b294_2020d_Box_13.mp3";
+                          totalscore = totalscore -3;                         
+                          thisstepdone = false;                  
+                          document.getElementById("feedbackrestart").removeEventListener("click", feedbackStepRestart);
+                          temp.data[user_id][datalength].push(['step2opta',totalscore,new Date()]); 
+                          //save();
+                            
+                         
+                            feedbackStepRestart =  function(e){
+                              if (document.getElementById("feedback").open) document.getElementById("feedback").close();
+                              thisstepdone = false;                  
+                              document.getElementById("bitwrongface").style.display = 'none';
+                              document.getElementById("happyface").style.display = 'none';
+                                  document.getElementById("scoresbox").style.display = 'none';
+                                  document.getElementById('note_support_staff').style.width = '70%';
+                                  document.getElementById("wrongface").style.display = 'none';
+                                  document.getElementById("verywrongface").style.display = 'none';
+                                  document.getElementById("happyface").style.display = 'none';
+                            document.getElementById("step2_optb").classList.remove("off");
+                              document.getElementById("step2_optc").classList.remove("off");
+                              document.getElementById("step2_optd").classList.remove("off");            
+                             }
+                           document.getElementById("feedbackrestart").addEventListener("click", feedbackStepRestart);           
+                          document.getElementById("feedbackrestart").style.display = 'block';     
+                          document.getElementById("feedbackclose").style.display = 'none';
+                         document.getElementById("score").innerHTML = totalscore;            
+                          document.getElementById("feedback").showModal(); 
+                        }                       
+                      });
+
+                        document.getElementById("step2_optb").addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                        if (!document.getElementById("step2_optb").classList.contains("off")){
+                          document.getElementById("step2choiceb_text").style.display="block";
+                          document.getElementById("step2_opta").classList.add("off");;
+                          document.getElementById("step2_optc").classList.add("off");
+                          document.getElementById("step2_optd").classList.add("off");
+                          temp.data[user_id][datalength].push(['step2optb',totalscore,new Date()]); 
+                         // save();
+                            
+                         
+                          VLE.resize_iframe();
+                          
+                        }
+                      });
+                      document.getElementById("step2optb_1").addEventListener("click", function(e){
+                          document.getElementById("step2optb_2").disabled = true;
+                          document.getElementById("happyface").style.display = 'block';                        
+                          document.getElementById("feedbacktext").innerHTML = '<p>Well done. Together, you receive 90% of the funding you need to establish your business. It&apos;s taken 5 working days. You will have to think about making some savings, but you have the vast majority of the money. Your BA suggests that you protect your innovative idea with a patent.</p> ';
+                                                 
+                          document.getElementById("feedbackrestart").style.display = 'none';     
+                          document.getElementById("feedbackclose").style.display = 'block';
+                          document.getElementById("scoresbox").style.display = "table-cell";
+                          document.getElementById('note_support_staff').style.width = '55%';
+
+                          nextStep = "step3";
+                          if (!marked[1]){
+                           totalscore = totalscore + 7;  
+                           marked[1] = true;
+                           thisstepdone = true;
+                          }                       
+                          temp.data[user_id][datalength].push(['step2optb_1',totalscore,new Date()]); 
+                         // save();
+                            
+                         
+                          document.getElementById("score").innerHTML = totalscore;            
+                          document.getElementById("feedbackaudio").src = "audio/b294_step2_opta.mp3";
+                          document.getElementById("feedback").showModal(); 
+
+                                   /* document.getElementById("step3div").classList.remove("hidden");
+                                    console.log("showing step3?");
+                                    document.getElementById("step3text").classList.remove("hidden");
+                                    document.getElementById("step3choices").classList.remove("hidden");*/
+
+
+                        });
+                        document.getElementById("step2optb_2").addEventListener("click", function(e){
+                          document.getElementById("step2optb_1").disabled = true;
+                          document.getElementById("bitwrongface").style.display = 'block';                        
+                         document.getElementById("feedbacktext").innerHTML = '<p>On reflection an offer of 90% of the money, and only 20% ownership in your business could effectively help you reach your goals. </p><p> Take a step back, go back to the previous level and consider a different path.</p> ';
+                          document.getElementById("feedbackrestart").style.display = 'block';     
+                          document.getElementById("feedbackclose").style.display = 'none';
+                         // document.getElementById("score").innerHTML = step2score[1];   //totalscore;            
+                         thisstepdone = false;                  
+                         document.getElementById("feedbackaudio").src = "audio/b294_step2_optb.mp3";
+                          document.getElementById("feedback").showModal(); 
+                          document.getElementById("feedbackrestart").removeEventListener("click", feedbackStepRestart);
+                          temp.data[user_id][datalength].push(['step2optb_2',totalscore,new Date()]); 
+                         // save();
+                            
+                         
+                            feedbackStepRestart =  function(e){
+                             //console.log("in restart button click ", document.getElementById("feedback"));
+                             if (document.getElementById("feedback").open) document.getElementById("feedback").close();
+                             document.getElementById("bitwrongface").style.display = 'none';
+                                  document.getElementById("scoresbox").style.display = 'none';
+                                  document.getElementById('note_support_staff').style.width = '70%';
+                                                            document.getElementById("wrongface").style.display = 'none';
+                                  document.getElementById("verywrongface").style.display = 'none';
+                                  document.getElementById("happyface").style.display = 'none';
+                             document.getElementById("step2_opta").classList.remove("off");
+                              document.getElementById("step2_optc").classList.remove("off");
+                              document.getElementById("step2_optd").classList.remove("off");
+                              document.getElementById("step2optb_1").disabled = false;
+                              document.getElementById("step2optb_2").selected = false;
+                              document.getElementById("step2choiceb_text").style.display = 'none';
+                              thisstepdone = false;          
+                             }
+                           document.getElementById("feedbackrestart").addEventListener("click", feedbackStepRestart);        
+                        });
+                      
+                      document.getElementById("step2_optc").addEventListener("click", function(e){
+                      // console.log("keycode = " + e.keyCode);
+                      if (!document.getElementById("step2_optc").classList.contains("off")){
+                        document.getElementById("bitwrongface").style.display = 'block';                        
+                          document.getElementById("step2_opta").classList.add("off");
+                          document.getElementById("step2_optb").classList.add("off");
+                          document.getElementById("step2_optd").classList.add("off");
+                          document.getElementById("feedbacktext").innerHTML =       "<p>You struggle to find Venture Capitalists willing to help fund your product. You presented your project to two VCs, but they were sceptical about your ability to make a profit. One VC told you that he is looking for more ambitious projects worth at least &pound;1m, and he&apos;d want to see a track record of performance. </p> <p>You decide that you need to look for an alternative option before you can proceed to the next phase.</p> ";
+                          document.getElementById("feedbackaudio").src = "audio/b294_2020d_Box_15.mp3";
+                          totalscore = totalscore - 1;                         
+                          temp.data[user_id][datalength].push(['step2_optc',totalscore,new Date()]); 
+                          //save();
+                            
+                          thisstepdone = false;                  
+                          document.getElementById("score").innerHTML = totalscore;            
+                         document.getElementById("feedback").showModal();
+                          document.getElementById("step2div").classList.remove("hidden");
+                         // console.log("showing step2?");
+                          document.getElementById("feedbackrestart").style.display = 'block';     
+                          document.getElementById("feedbackclose").style.display = 'none';
+                         
+                            document.getElementById("feedbackrestart").removeEventListener("click", feedbackStepRestart);
+                         
+                         feedbackStepRestart =  function(e){
+                           //console.log("in restart button click ", document.getElementById("feedback"));
+                           if (document.getElementById("feedback").open) document.getElementById("feedback").close();
+                           document.getElementById("bitwrongface").style.display = 'none';
+                                  document.getElementById("scoresbox").style.display = 'none';
+                                  document.getElementById("wrongface").style.display = 'none';
+                                  document.getElementById('note_support_staff').style.width = '70%';
+                                                            document.getElementById("verywrongface").style.display = 'none';
+                                  document.getElementById("happyface").style.display = 'none';
+                              document.getElementById("step2_optb").classList.remove("off");
+                              document.getElementById("step2_opta").classList.remove("off");
+                              document.getElementById("step2_optd").classList.remove("off");
+                              thisstepdone = false;  
+                          }
+                        document.getElementById("feedbackrestart").addEventListener("click", feedbackStepRestart);       
+                          document.getElementById("step2text").classList.remove("hidden");
+                          document.getElementById("step2choices").classList.remove("hidden");
+                        }
+                      });
+
+                      document.getElementById("step2_optd").addEventListener("click", function(e){
+                      // console.log("keycode = " + e.keyCode);
+                      if (!document.getElementById("step2_optd").classList.contains("off")){
+                        document.getElementById("wrongface").style.display = 'block';                        
+                          document.getElementById("step2_opta").classList.add("off");
+                          document.getElementById("step2_optb").classList.add("off");
+                          document.getElementById("step2_optc").classList.add("off");                         
+                          document.getElementById("feedbacktext").innerHTML = "<p>You struggle to find a lender willing to bet on your project with a reasonably priced loan. As an organisation, your credit record isn&apos;t solid enough to convince a bank to give you a loan.</p>  <p>Unfortunately, your project stops at the prototype stage.</p> <p> Fortunately, you still have a chance to have another go. If you&apos;ve learned from your experience, you will make better decisions next time.</p>";
+                          document.getElementById("feedbackaudio").src = "audio/b294_2020d_Box_16.mp3";
+                          document.getElementById("feedbackrestart").style.display = 'block';     
+                          thisstepdone = false;                  
+                         totalscore = totalscore - 2;  
+                        // console.log("in step2 optd ", thisstepdone)  ;                     
+                         temp.data[user_id][datalength].push(['step2_optd',totalscore,new Date()]); 
+                        // save();
+                            
+                         
+                            document.getElementById("feedbackrestart").removeEventListener("click", feedbackStepRestart);
+                         
+                         feedbackStepRestart =  function(e){
+                           //console.log("in restart button click ", document.getElementById("feedback"));
+                           if (document.getElementById("feedback").open) document.getElementById("feedback").close();
+                           document.getElementById("bitwrongface").style.display = 'none';
+                                  document.getElementById("scoresbox").style.display = 'none';
+                                  document.getElementById('note_support_staff').style.width = '70%';
+                                                            document.getElementById("wrongface").style.display = 'none';
+                                  document.getElementById("verywrongface").style.display = 'none';
+                                  document.getElementById("happyface").style.display = 'none';
+                             document.getElementById("step2_opta").classList.remove("off");
+                              document.getElementById("step2_optb").classList.remove("off");
+                              document.getElementById("step2_optc").classList.remove("off");
+                              thisstepdone = false;                  
+                              //console.log("in feedback restart ", thisstepdone)  ;       
+                          }
+                        document.getElementById("feedbackrestart").addEventListener("click", feedbackStepRestart);       
+                          document.getElementById("step2text").classList.remove("hidden");
+                          document.getElementById("feedbackclose").style.display = 'none';
+                          document.getElementById("score").innerHTML = totalscore;            
+                         document.getElementById("feedback").showModal();
+                         
+                        }
+                      });
+
+                    
+
+                     document.getElementById("step3_opta").addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                        if (!document.getElementById("step3_opta").classList.contains("off")){
+                          document.getElementById("happyface").style.display = 'block';                        
+                          document.getElementById("step3_optb").classList.add("off");
+                          document.getElementById("step3_optc").classList.add("off");
+                          document.getElementById("step3_optd").classList.add("off");
+                          
+                           document.getElementById("feedbacktext").innerHTML = " <p>You manage to persuade a bank to lend you the money at an interest rate of 4%. </p><p>This could be a good choice given the fact that you need to make a capital expenditure, namely buying non-current assets. In fact, long-term assets are usually best financed through long-term borrowing. </p> <p>Your decision provides consistent matching between the life of the asset and the term (or maturity) of the borrowing. Well done.</p>";
+                          document.getElementById("feedbackaudio").src = "audio/b294_2020d_Box_24.mp3";
+                          document.getElementById("feedbackrestart").style.display = 'none';     
+                          document.getElementById("feedbackclose").style.display = 'block';
+                          document.getElementById("scoresbox").style.display = "table-cell";
+                          document.getElementById('note_support_staff').style.width = '55%';
+                          
+                          nextStep = "step4";
+                          if (!marked[2]){                          
+                            totalscore = totalscore + 7;             
+                            marked[2] = true;
+                            thisstepdone = true;
+                          }            
+                          console.log("step 3a: totalscore = " ,totalscore);                    
+                          temp.data[user_id][datalength].push(['step3_opta',totalscore,new Date()]); 
+                         // save();
+                            
+                           
+                          document.getElementById("score").innerHTML = totalscore;            
+                          document.getElementById("feedback").showModal(); 
+                          /*document.getElementById("step4div").classList.remove("hidden");
+                          console.log("showing step4?");
+                          document.getElementById("step4text").classList.remove("hidden");
+                          document.getElementById("step4choices").classList.remove("hidden");*/
+                        }                       
+                      });
+                    
+                      document.getElementById("step3_optb").addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                        if (!document.getElementById("step3_optb").classList.contains("off")){
+                          document.getElementById("wrongface").style.display = 'block';                        
+                          document.getElementById("step3_opta").classList.add("off");
+                          document.getElementById("step3_optc").classList.add("off");
+                          document.getElementById("step3_optd").classList.add("off");
+                         
+                          document.getElementById("feedbacktext").innerHTML = "<p>You manage to persuade a bank to lend you the money at an interest rate 1.5%, but you need to make a capital expenditure, namely buying non-current assets.</p>  <p>Long-term assets are usually best financed through long-term borrowing. Although short-term borrowing is cheaper, to fund plant and machinery you need series of short-term borrowings. </p> <p>You end up paying high issue costs to refund your purchase. Your decision does not provide a solid matching between the life of the asset and the term (maturity) of the borrowing. </p> <p>Your decision starts to jeopardize your finances, and ultimately the stability of the entire project.</p>";
+                          
+                          document.getElementById("feedbackrestart").style.display = 'block';     
+                          document.getElementById("feedbackclose").style.display = 'none';
+                          thisstepdone = false;                  
+                          totalscore = totalscore - 1;                         
+                         // console.log("step 3b: totalscore = " ,totalscore);                    
+                          temp.data[user_id][datalength].push(['step3_optb',totalscore,new Date()]); 
+                         // save();
+                            
+                                   
+                         
+                            document.getElementById("feedbackrestart").removeEventListener("click", feedbackStepRestart);
+                         
+                         feedbackStepRestart =  function(e){
+                           //console.log("in restart button click ", document.getElementById("feedback"));
+                           if (document.getElementById("feedback").open) document.getElementById("feedback").close();
+                           document.getElementById("bitwrongface").style.display = 'none';
+                                  document.getElementById("scoresbox").style.display = 'none';
+                                  document.getElementById('note_support_staff').style.width = '70%';
+                                                           document.getElementById("wrongface").style.display = 'none';
+                                  document.getElementById("verywrongface").style.display = 'none';
+                                  document.getElementById("happyface").style.display = 'none';
+                            document.getElementById("step3_optc").classList.remove("off");
+                              document.getElementById("step3_opta").classList.remove("off");
+                              document.getElementById("step3_optd").classList.remove("off");
+                          }
+                        document.getElementById("feedbackrestart").addEventListener("click", feedbackStepRestart);           
+                          document.getElementById("score").innerHTML = totalscore;            
+                          document.getElementById("feedbackaudio").src = "audio/b294_2020d_Box_25.mp3";
+                          document.getElementById("feedback").showModal();
+                        }
+                      });
+                      
+                      document.getElementById("step3_optc").addEventListener("click", function(e){
+                      // console.log("keycode = " + e.keyCode);
+                      if (!document.getElementById("step3_optc").classList.contains("off")){
+                        document.getElementById("happyface").style.display = 'block';                        
+                         document.getElementById("step3_opta").classList.add("off");
+                          document.getElementById("step3_optb").classList.add("off");
+                          document.getElementById("step3_optd").classList.add("off");
+                        
+                          document.getElementById("feedbacktext").innerHTML =       "    <p>This could be a valid alternative to traditional borrowing, but it will depend on how important flexibility is to you in relation to the purchase associated with the expansion. </p> <p>You reach an agreement with a leasing organisation. </p> <p>They reiterate the consequences of missing the repayments. Your assets may be repossessed and your credit rating can be compromised. This would jeopardize your ability to find funds in the future. </p> <p>Are you still happy with this choice?</p> ";
+                          document.getElementById("feedbackaudio").src = "audio/b294_2020d_Box_26.mp3";
+                          if (!marked[2]){                          
+                            totalscore = totalscore + 5;  
+                            marked[2] = true;
+                            thisstepdone = true;
+                          }                       
+                         // console.log("step 3c: totalscore = " ,totalscore);                    
+                          temp.data[user_id][datalength].push(['step3_optc',totalscore,new Date()]); 
+                          //save();
+                            
+                                                   
+                          document.getElementById("feedbackrestart").style.display = 'none';     
+                          document.getElementById("feedbackclose").style.display = 'block';
+                          document.getElementById("scoresbox").style.display = "table-cell";
+                          document.getElementById('note_support_staff').style.width = '55%';
+                          
+                          nextStep = "step4";
+
+                         document.getElementById("score").innerHTML = totalscore;            
+                         document.getElementById("feedback").showModal();
+                        /*  document.getElementById("step4div").classList.remove("hidden");
+                          console.log("showing step4?");
+                          document.getElementById("step4text").classList.remove("hidden");
+                          document.getElementById("step4choices").classList.remove("hidden");*/
+                        }
+                      });
+
+                      document.getElementById("step3_optd").addEventListener("click", function(e){
+                      // console.log("keycode = " + e.keyCode);
+                      if (!document.getElementById("step3_optd").classList.contains("off")){
+                        document.getElementById("wrongface").style.display = 'block';                        
+                          document.getElementById("step3_opta").classList.add("off");
+                          document.getElementById("step3_optb").classList.add("off");
+                          document.getElementById("step3_optc").classList.add("off");
+                         
+                          document.getElementById("feedbacktext").innerHTML =       "         <p>Your decision angers your collaborator. She asks you what retained earning you think you have. </p> <p>You immediately realize that she is absolutely right. You still have to sell the devices in order to generate earnings to be retained. </p>  <p>You will have to find an alternative option before you can proceed to the next phase. </p>";
+                          document.getElementById("feedbackaudio").src = "audio/b294_2020d_Box_27.mp3";
+                          document.getElementById("feedbackrestart").style.display = 'block';     
+                          document.getElementById("feedbackclose").style.display = 'none';
+                          thisstepdone = false;                  
+                         totalscore = totalscore - 2;                         
+                          // console.log("step 3d: totalscore = " ,totalscore);                                                                   
+                           temp.data[user_id][datalength].push(['step3_optd',totalscore,new Date()]); 
+                           //save();
+                            
+                         
+                            document.getElementById("feedbackrestart").removeEventListener("click", feedbackStepRestart);
+                         
+                         feedbackStepRestart =  function(e){
+                           //console.log("in restart button click ", document.getElementById("feedback"));
+                           if (document.getElementById("feedback").open) document.getElementById("feedback").close();
+                           document.getElementById("bitwrongface").style.display = 'none';
+                                  document.getElementById("scoresbox").style.display = 'none';
+                                  document.getElementById('note_support_staff').style.width = '70%';
+                                                           document.getElementById("wrongface").style.display = 'none';
+                                  document.getElementById("verywrongface").style.display = 'none';
+                                  document.getElementById("happyface").style.display = 'none';
+                                  document.getElementById('note_support_staff').style.width = '70%';
+                          
+                              document.getElementById("step3_optb").classList.remove("off");
+                              document.getElementById("step3_opta").classList.remove("off");
+                              document.getElementById("step3_optc").classList.remove("off");
+                              
+                          }
+                        document.getElementById("feedbackrestart").addEventListener("click", feedbackStepRestart);                         
+                          document.getElementById("score").innerHTML = totalscore;            
+                         document.getElementById("feedback").showModal();
+                         }
+                      });
+
+                     document.getElementById("step4_opta").addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                        if (!document.getElementById("step4_opta").classList.contains("off")){
+                          document.getElementById("step4_optb").classList.add("off");
+                          document.getElementById("step4_optc").classList.add("off");
+                          document.getElementById("happyface").style.display = 'block';                        
+                        
+                           document.getElementById("feedbacktext").innerHTML = "<p>Given the available profit figures, your interest expense is &pound;60,000 (10% of 600,000). This leaves you with a profit of &pound;540,000 (&pound;600,000 - &pound;60,000).</p><p>Your project can develop to the next phase.</p>";
+                          document.getElementById("feedbackaudio").src = "audio/b294_2020d_Box_32.mp3";
+                          if (!marked[3]){                          
+                            totalscore = totalscore + 7; 
+                            marked[3] = true;
+                            thisstepdone = true;
+                          }                        
+                          // console.log("step 5 a: totalscore = " ,totalscore);                    
+                           temp.data[user_id][datalength].push(['step4_opta',totalscore,new Date()]); 
+                           save();
+                            
+                         
+                          document.getElementById("feedbackrestart").style.display = 'none';     
+                          document.getElementById("feedbackclose").style.display = 'block';
+                          document.getElementById("scoresbox").style.display = "table-cell";
+                          document.getElementById('note_support_staff').style.width = '55%';
+                          
+                          nextStep = "step5";
+                          document.getElementById('GOscore').innerHTML = totalscore;
+                          if (totalscore > 25){ 
+                            document.getElementById('GOgroup').innerHTML = "Excellent";
+                            document.getElementById("GOtext").innerHTML = "Your company is a success. You have made great decisions all the way through the process.";
+                            }
+                          else if (totalscore  > 20) {
+                            document.getElementById('GOgroup').innerHTML = "Good";
+                            document.getElementById("GOtext").innerHTML ="You've made really good progress. Some of your decisions cost you slight delays in the process but you have learned from your experiences and achieved your goals." ;
+                           }
+                          else {document.getElementById('GOgroup').innerHTML = "Ok";
+                                document.getElementById("GOtext").innerHTML = "Throughout this process, you have learnt from your experiences. Your decisions have cost you a substantial delay to your project but you have been successful in achieving your goals.";
+                           }
+                          document.getElementById("score").innerHTML = totalscore;            
+                          document.getElementById("feedback").showModal(); 
+                          /*document.getElementById("step5div").classList.remove("hidden");
+                          console.log("showing step5?");
+                          document.getElementById("step5text").classList.remove("hidden");*/
+                        }                       
+                      });
+             
+                      document.getElementById("step4_optb").addEventListener("click", function(e){
+                     // console.log("keycode = " + e.keyCode);
+                        if (!document.getElementById("step4_optb").classList.contains("off")){
+                          document.getElementById("step4_opta").classList.add("off");
+                          document.getElementById("step4_optc").classList.add("off");
+                          document.getElementById("happyface").style.display = 'block';                        
+                       
+                          document.getElementById("feedbacktext").innerHTML = " <p>Given the available profit figures, you will only keep 90% of your profits. This will be &pound;540,000 (90% of &pound;600,000).</p>  <p>Your project can develop to the next phase.</p>";
+                         
+                          if (!marked[3]){                          
+                              totalscore = totalscore + 7;   
+                              marked[3] = true;
+                              thisstepdone = true;
+                          }               
+                          temp.data[user_id][datalength].push(['step4_optb',totalscore,new Date()]); 
+                          save();
+                            
+                                
+                         // console.log("step 5: totalscore = " ,totalscore);                    
+                          document.getElementById("feedbackrestart").style.display = 'none';     
+                          document.getElementById("feedbackclose").style.display = 'block';
+                          document.getElementById("scoresbox").style.display = "table-cell";
+                          document.getElementById('note_support_staff').style.width = '55%';
+                         
+                          nextStep = "step5";
+                          document.getElementById('GOscore').innerHTML = totalscore;
+                          if (totalscore > 25){ 
+                            document.getElementById('GOgroup').innerHTML = "Excellent";
+                            document.getElementById("GOtext").innerHTML = "Your company is a success. You have made great decisions all the way through the process.";
+                            }
+                          else if (totalscore > 20) {
+                            document.getElementById('GOgroup').innerHTML = "Good";
+                            document.getElementById("GOtext").innerHTML ="You've made really good progress. Some of your decisions cost you slight delays in the process but you have learned from your experiences and achieved your goals." ;
+                           }
+                          else {document.getElementById('GOgroup').innerHTML = "Ok";
+                                document.getElementById("GOtext").innerHTML = "Throughout this process, you have learnt from your experiences. Your decisions have cost you a substantial delay to your project but you have been successful in achieving your goals.";
+                           }
+                          
+                         document.getElementById("score").innerHTML = totalscore;            
+                          document.getElementById("feedbackaudio").src = "audio/b294_2020d_Box_33.mp3";
+                          document.getElementById("feedback").showModal();
+                        }
+                      });
+                      
+                      document.getElementById("step4_optc").addEventListener("click", function(e){
+                      // console.log("keycode = " + e.keyCode);
+                      if (!document.getElementById("step4_optc").classList.contains("off")){
+                          document.getElementById("step4_opta").classList.add("off");
+                          document.getElementById("step4_optb").classList.add("off");
+                          document.getElementById("bitwrongface").style.display = 'block';                        
+                          document.getElementById('note_support_staff').style.width = '70%';
+                      
+                          document.getElementById("feedbacktext").innerHTML =       "     <p>You need additional and more structured information about the required return and taxation, in order to decide on the specific mix.</p> <p>You will need to reconsider your options.</p>";
+                          document.getElementById("feedbackaudio").src = "audio/b294_2020d_Box_34.mp3";
+                          thisstepdone = false;                  
+                         totalscore = totalscore - 1; 
+                         temp.data[user_id][datalength].push(['step4_optc',totalscore,new Date()]); 
+                         save();
+                            
+                                                 
+                           document.getElementById("feedbackrestart").addEventListener("click", function(e){
+                              //console.log("in restart button click ", document.getElementById("feedback"));
+                              if (document.getElementById("feedback").open) document.getElementById("feedback").close();
+                              document.getElementById("step4_optb").classList.remove("off");
+                              document.getElementById("step4_opta").classList.remove("off");
+                              
+                            });                
+                          document.getElementById("feedbackrestart").style.display = 'block';     
+                          document.getElementById("feedbackclose").style.display = 'none';
+                         document.getElementById("score").innerHTML = totalscore;            
+                         document.getElementById("feedback").showModal();
+                                                  
+                        }
+                      });
+                     
+                                    
+
+                function save() {
+                    saveGroupData(getSaveObj());
+                }
+
+                //window.addEventListener("beforeunload", save);
+
+                var getSaveObj = function() {
+                 //  console.log("in getsaveobj");
+                    var obj = {};
+                    var user_obj = {};
+                                       
+                    save_data = JSON.stringify(temp.data[user_id]);
+                          //console.log("item_obj = ", item_obj);
+
+                    obj[user_id] = save_data;
+                    console.log("save object = ", temp.data[user_id]);
+                          
+                         return obj;
+                      };
+
+                      var saveGroupData = function(saveObj) {
+                          console.log("in savegroupdata saveobj = ", saveObj);
+                          console.log("in save group data, prev data = ", prevData);
+
+                          saver.save({
+                              user: false,
+                              values: saveObj,
+                              previous: prevData,
+                              callback: function(success) {
+                                  if (success) {
+                                      prevData = saveObj;
+                                  }
+                              },
+                              retry: function(data) {
+                                  prevData = data;
+                                  saveObj = getSaveObj();
+                                  console.log('---Retry data: ', data, saveObj);
+                                  saveGroupData(saveObj);
+                              }
+                          });
+                      };
+
+  }
+  (function() {
+            // add function to reize iframe on window resize: needs to check how much width & hegith have changed so doesn't get trapped in loop of resizing
+
+            var w = 0,
+                h = 0,
+                oldw = 0,
+                oldh = 0;
+
+            // window.resize event listener
+            window.addEventListener('resize', function() {
+
+                w = window.innerWidth;
+                h = window.innerHeight;
+                if (Math.abs(w - oldw) > 8 || Math.abs(h - oldh) > 8) {
+                  //console.log("document = ", document);
+                  // console.log("faketextarea = ", document.getElementById("faketextarea"));
+                  // console.log("commentslist = ", document.getElementById("commentslist"));
+                  //if (document.getElementById("commentslist") != null ) { console.log(" commentslist height ", document.getElementById("commentslist").style.height,  document.getElementById("commentslist").getBoundingClientRect() , document.getElementById("commentslist").offsetHeight); }
+                  if (document.getElementById("faketextarea") != null ){
+                    //  console.log("RESIZING heights ", document.getElementById("faketextarea").style.height , document.getElementById("commentslist").offsetHeight);
+                    if( document.getElementById("commentslist") != null 
+                        && document.getElementById("showall").innerHTML.includes("fewer") ) { 
+                        // console.log("resetting div/ul height ", document.getElementById("faketextarea").style.height , document.getElementById("commentslist").offsetHeight);
+                        document.getElementById("faketextarea").style.height = document.getElementById("commentslist").offsetHeight + "px";
+                    }
+                  }
+                  //document.getElementById("faketextarea").style.height = document.getElementById("commentslist").style.height;
+                    VLE.resize_iframe();
+                   // console.log("resizing frame " + w + ", " + h + "< " + oldw + ", " + oldh);
+                    oldw = w;
+                    oldh = h;
+                }
+            });
+        }());
+ 
+</script>
+</body>
+</html>

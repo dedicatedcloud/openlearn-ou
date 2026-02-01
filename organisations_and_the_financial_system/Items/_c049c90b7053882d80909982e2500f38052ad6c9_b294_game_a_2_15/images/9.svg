@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#222D4F;}
+	
+		.st1{clip-path:url(#SVGID_2_);fill:#E0D09B;stroke:#272425;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	
+		.st2{clip-path:url(#SVGID_2_);fill:#AE957C;stroke:#272425;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#222D4F;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<circle class="st0" cx="20.871" cy="21.069" r="20.074"/>
+	<g>
+		<defs>
+			<circle id="SVGID_1_" cx="20.927" cy="21.069" r="20.074"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st1" d="M39.661,9.145c-2.983,1.507-1.761,8.454-1.761,8.454s-1.197,6.812-5.573,6.082
+			c-1.042,2.761-4.011,2.5-4.011,2.5l-2.396,3.75c0,0-3.125-1.354-2.084-3.646c0.666-1.465,0.534-1.223,3.282-6.824
+			c3.065-5.812,1.518-7.323,1.518-7.323l-3.734,0.564c0,0-2.628,4.051-5.701,0.717l3.594-3.855c0,0,11.177-4.847,12.345-5.626"/>
+		<path class="st2" d="M1.712,32.419c0.496-0.312,0.396-0.3,0.396-0.3s0.058-6.511,0.005-6.829
+			c-0.053-0.317,5.149-8.505,5.149-8.505c3.888,2.094-0.084,7.349-0.084,7.349l3.789-5.129l4.663-5.569
+			c1.951,1.376,1.886,2.842,0.846,4.244c-1.315,1.772-3.42,4.379-3.42,4.379l7.73-5.984c1.254,2.036,1.136,3.582-0.259,4.629
+			c-0.843,0.633-5.682,4.118-5.682,4.118l8.628-2.711c0.263,1.46,1.105,3.336-1.473,4.118c-3.214,0.975-6.997,1.981-6.997,1.981
+			l7.225,0.446c0,2.194-1.49,2.838-2.911,2.942c-1.536,0.113-5.208,0.156-5.208,0.156s-1.593,4.701-5.783,4.727
+			c-0.411,0.305-1.032,0.741-1.739,1.226"/>
+	</g>
+	<circle class="st3" cx="20.927" cy="21.069" r="20.074"/>
+</g>
+</svg>

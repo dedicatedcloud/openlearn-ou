@@ -1,0 +1,838 @@
+[Nov 16 09:49]  .
+├── [Nov 16 09:46]  challenges_in_advanced_management_accounting
+│   ├── [Nov 16 09:43]  challenges_in_advanced_management_accounting. (1).html
+│   ├── [Nov 16 09:34]  challenges_in_advanced_management_accounting.doc.zip
+│   ├── [Nov 16 09:34]  challenges_in_advanced_management_accounting_printable.pdf
+│   ├── [Nov 16 09:43]  images
+│   │   ├── [Nov 16 09:43]  image10.jpg
+│   │   ├── [Nov 16 09:43]  image11.jpg
+│   │   ├── [Nov 16 09:43]  image12.jpg
+│   │   ├── [Nov 16 09:43]  image13.jpg
+│   │   ├── [Nov 16 09:43]  image14.png
+│   │   ├── [Nov 16 09:43]  image15.png
+│   │   ├── [Nov 16 09:43]  image16.png
+│   │   ├── [Nov 16 09:43]  image17.png
+│   │   ├── [Nov 16 09:43]  image18.png
+│   │   ├── [Nov 16 09:43]  image19.png
+│   │   ├── [Nov 16 09:43]  image1.png
+│   │   ├── [Nov 16 09:43]  image20.png
+│   │   ├── [Nov 16 09:43]  image21.png
+│   │   ├── [Nov 16 09:43]  image22.png
+│   │   ├── [Nov 16 09:43]  image23.png
+│   │   ├── [Nov 16 09:43]  image24.png
+│   │   ├── [Nov 16 09:43]  image25.png
+│   │   ├── [Nov 16 09:43]  image26.png
+│   │   ├── [Nov 16 09:43]  image27.png
+│   │   ├── [Nov 16 09:43]  image28.png
+│   │   ├── [Nov 16 09:43]  image29.png
+│   │   ├── [Nov 16 09:43]  image2.png
+│   │   ├── [Nov 16 09:43]  image30.png
+│   │   ├── [Nov 16 09:43]  image31.png
+│   │   ├── [Nov 16 09:43]  image32.png
+│   │   ├── [Nov 16 09:43]  image33.png
+│   │   ├── [Nov 16 09:43]  image34.png
+│   │   ├── [Nov 16 09:43]  image35.jpg
+│   │   ├── [Nov 16 09:43]  image36.jpg
+│   │   ├── [Nov 16 09:43]  image37.png
+│   │   ├── [Nov 16 09:43]  image38.png
+│   │   ├── [Nov 16 09:43]  image39.jpg
+│   │   ├── [Nov 16 09:43]  image3.png
+│   │   ├── [Nov 16 09:43]  image40.jpg
+│   │   ├── [Nov 16 09:43]  image41.png
+│   │   ├── [Nov 16 09:43]  image42.png
+│   │   ├── [Nov 16 09:43]  image43.png
+│   │   ├── [Nov 16 09:43]  image44.png
+│   │   ├── [Nov 16 09:43]  image45.png
+│   │   ├── [Nov 16 09:43]  image46.png
+│   │   ├── [Nov 16 09:43]  image47.png
+│   │   ├── [Nov 16 09:43]  image48.png
+│   │   ├── [Nov 16 09:43]  image49.png
+│   │   ├── [Nov 16 09:43]  image4.png
+│   │   ├── [Nov 16 09:43]  image5.png
+│   │   ├── [Nov 16 09:43]  image6.png
+│   │   ├── [Nov 16 09:43]  image7.png
+│   │   ├── [Nov 16 09:43]  image8.png
+│   │   └── [Nov 16 09:43]  image9.png
+│   └── [Nov 16 09:43]  index.html
+├── [Nov 16 09:46]  companies_and_financial_accounting
+│   ├── [Nov 16 09:43]  companies_and_financial_accounting.docx (1).html
+│   ├── [Nov 16 09:27]  companies_and_financial_accounting.docx.zip
+│   ├── [Nov 16 09:26]  companies_and_financial_accounting_printable.pdf
+│   ├── [Nov 16 09:43]  images
+│   │   ├── [Nov 16 09:43]  image10.jpg
+│   │   ├── [Nov 16 09:43]  image11.jpg
+│   │   ├── [Nov 16 09:43]  image12.jpg
+│   │   ├── [Nov 16 09:43]  image1.jpg
+│   │   ├── [Nov 16 09:43]  image2.jpg
+│   │   ├── [Nov 16 09:43]  image3.jpg
+│   │   ├── [Nov 16 09:43]  image4.jpg
+│   │   ├── [Nov 16 09:43]  image5.jpg
+│   │   ├── [Nov 16 09:43]  image6.jpg
+│   │   ├── [Nov 16 09:43]  image7.jpg
+│   │   ├── [Nov 16 09:43]  image8.jpg
+│   │   └── [Nov 16 09:43]  image9.jpg
+│   └── [Nov 16 09:43]  index.html
+├── [Nov 16 09:46]  company_law_in_context
+│   ├── [Nov 16 09:38]  company_law_in_context.doc
+│   ├── [Nov 16 09:38]  company_law_in_context.html.zip
+│   ├── [Nov 16 09:38]  company_law_in_context_printable.pdf
+│   ├── [Nov 16 09:38]  company_law_in_context_rss.xml
+│   ├── [Nov 16 09:43]  index.html
+│   ├── [Nov 16 09:43]  Items
+│   │   ├── [Nov 16 09:43]  _0d9f6f37ec9452c4f42c8cca19b688b00e28ba92_coll_law.jpg
+│   │   ├── [Nov 16 09:43]  _7a9c96bf9ec25c74c3132c2bbbef2940ee04c5c2_w223_1_fig01.jpg
+│   │   ├── [Nov 16 09:43]  _ab5a36e6846382267b2301c50d1c80de99caac90_w223_1_fig02.jpg
+│   │   ├── [Nov 16 09:43]  copyright-full.html
+│   │   ├── [Nov 16 09:43]  _d3c986e615af52d98ee2159f5114e2c4bec9ff99_ol_skeleton_keeponlearning_image.jpg
+│   │   ├── [Nov 16 09:43]  x_0_w223_1__introduction.html
+│   │   ├── [Nov 16 09:43]  x_10_w223_1_2_3.html
+│   │   ├── [Nov 16 09:43]  x_11_w223_1_2_4.html
+│   │   ├── [Nov 16 09:43]  x_12_w223_1_2_5.html
+│   │   ├── [Nov 16 09:43]  x_14_w223_1_3_1.html
+│   │   ├── [Nov 16 09:43]  x_15_w223_1_3_2.html
+│   │   ├── [Nov 16 09:43]  x_17_w223_1_3_3_1.html
+│   │   ├── [Nov 16 09:43]  x_18_w223_1_3_3_2.html
+│   │   ├── [Nov 16 09:43]  x_1_w223_1__learningoutcomes.html
+│   │   ├── [Nov 16 09:43]  x_20_w223_1_3_4_1.html
+│   │   ├── [Nov 16 09:43]  x_21_w223_1_3_4_2.html
+│   │   ├── [Nov 16 09:43]  x_22_w223_1_3_5.html
+│   │   ├── [Nov 16 09:43]  x_23_w223_1_3_5_1.html
+│   │   ├── [Nov 16 09:43]  x_24_w223_1_4.html
+│   │   ├── [Nov 16 09:43]  x_25_w223_1_5.html
+│   │   ├── [Nov 16 09:43]  x_26_w223_1_6.html
+│   │   ├── [Nov 16 09:43]  x_27_w223_1__acknowledgements.html
+│   │   ├── [Nov 16 09:43]  x_3_w223_1_1_1.html
+│   │   ├── [Nov 16 09:43]  x_4_w223_1_1_2.html
+│   │   ├── [Nov 16 09:43]  x_5_w223_1_1_3.html
+│   │   ├── [Nov 16 09:43]  x_6_w223_1_1_4.html
+│   │   ├── [Nov 16 09:43]  x_8_w223_1_2_1.html
+│   │   └── [Nov 16 09:43]  x_9_w223_1_2_2.html
+│   └── [Nov 16 09:43]  Shared
+│       ├── [Nov 16 09:43]  1d12a.png
+│       ├── [Nov 16 09:43]  1d12b.png
+│       ├── [Nov 16 09:43]  1d132.png
+│       ├── [Nov 16 09:43]  1d133.png
+│       ├── [Nov 16 09:43]  1d134.png
+│       ├── [Nov 16 09:43]  1d135.png
+│       ├── [Nov 16 09:43]  1d13d.png
+│       ├── [Nov 16 09:43]  1d13e.png
+│       ├── [Nov 16 09:43]  1d13f.png
+│       ├── [Nov 16 09:43]  1d140.png
+│       ├── [Nov 16 09:43]  1d15d.png
+│       ├── [Nov 16 09:43]  1d15e.dot.png
+│       ├── [Nov 16 09:43]  1d15e.png
+│       ├── [Nov 16 09:43]  1d15f.dot.png
+│       ├── [Nov 16 09:43]  1d15f.png
+│       ├── [Nov 16 09:43]  1d160.dot.png
+│       ├── [Nov 16 09:43]  1d160dot.png
+│       ├── [Nov 16 09:43]  1d160.png
+│       ├── [Nov 16 09:43]  1d161.dot.png
+│       ├── [Nov 16 09:43]  1d161.png
+│       ├── [Nov 16 09:43]  1d162.png
+│       ├── [Nov 16 09:43]  1d18f.double.png
+│       ├── [Nov 16 09:43]  1d18f.png
+│       ├── [Nov 16 09:43]  1d191.double.png
+│       ├── [Nov 16 09:43]  1d191.png
+│       ├── [Nov 16 09:43]  266d.png
+│       ├── [Nov 16 09:43]  266e.png
+│       ├── [Nov 16 09:43]  266f.png
+│       ├── [Nov 16 09:43]  302.1.png
+│       ├── [Nov 16 09:43]  302.2.png
+│       ├── [Nov 16 09:43]  302.3.png
+│       ├── [Nov 16 09:43]  302.4.png
+│       ├── [Nov 16 09:43]  302.5.png
+│       ├── [Nov 16 09:43]  302.6.png
+│       ├── [Nov 16 09:43]  302.7.png
+│       ├── [Nov 16 09:43]  accessibilityinfo.png
+│       ├── [Nov 16 09:43]  address.png
+│       ├── [Nov 16 09:43]  animation-min.js
+│       ├── [Nov 16 09:43]  assessmentguide.png
+│       ├── [Nov 16 09:43]  assessment.png
+│       ├── [Nov 16 09:43]  audio.png
+│       ├── [Nov 16 09:43]  blog.png
+│       ├── [Nov 16 09:43]  book.png
+│       ├── [Nov 16 09:43]  calculator.png
+│       ├── [Nov 16 09:43]  calendar.png
+│       ├── [Nov 16 09:43]  card.png
+│       ├── [Nov 16 09:43]  cd.png
+│       ├── [Nov 16 09:43]  computer.png
+│       ├── [Nov 16 09:43]  connection-min.js
+│       ├── [Nov 16 09:43]  copyright.png
+│       ├── [Nov 16 09:43]  courseguide.png
+│       ├── [Nov 16 09:43]  course.png
+│       ├── [Nov 16 09:43]  dom-min.js
+│       ├── [Nov 16 09:43]  dragdrop-min.js
+│       ├── [Nov 16 09:43]  dvd.png
+│       ├── [Nov 16 09:43]  email.png
+│       ├── [Nov 16 09:43]  enquiryform.png
+│       ├── [Nov 16 09:43]  event-min.js
+│       ├── [Nov 16 09:43]  expressinstall.swf
+│       ├── [Nov 16 09:43]  extra.js
+│       ├── [Nov 16 09:43]  fax.png
+│       ├── [Nov 16 09:43]  forum.png
+│       ├── [Nov 16 09:43]  help.png
+│       ├── [Nov 16 09:43]  inperson.png
+│       ├── [Nov 16 09:43]  instantmessaging.png
+│       ├── [Nov 16 09:43]  learningjournal.png
+│       ├── [Nov 16 09:43]  longactivity.png
+│       ├── [Nov 16 09:43]  main_logo.png
+│       ├── [Nov 16 09:43]  mediaplayer.swf
+│       ├── [Nov 16 09:43]  mediumactivity.png
+│       ├── [Nov 16 09:43]  musicdvd.png
+│       ├── [Nov 16 09:43]  mystuff.png
+│       ├── [Nov 16 09:43]  newwindow.png
+│       ├── [Nov 16 09:43]  notes.png
+│       ├── [Nov 16 09:43]  offlineactivity.png
+│       ├── [Nov 16 09:43]  onlineactivity.png
+│       ├── [Nov 16 09:43]  onlinecomputer.png
+│       ├── [Nov 16 09:43]  onlineglossary.png
+│       ├── [Nov 16 09:43]  oucontent.js
+│       ├── [Nov 16 09:43]  oucontent-js.css
+│       ├── [Nov 16 09:43]  oulogo-56.jpg
+│       ├── [Nov 16 09:43]  phone.png
+│       ├── [Nov 16 09:43]  practicalactivity.png
+│       ├── [Nov 16 09:43]  reader.png
+│       ├── [Nov 16 09:43]  reflection.png
+│       ├── [Nov 16 09:43]  researchmethods.png
+│       ├── [Nov 16 09:43]  shortactivity.png
+│       ├── [Nov 16 09:43]  studyguide.png
+│       ├── [Nov 16 09:43]  study.png
+│       ├── [Nov 16 09:43]  styles.css
+│       ├── [Nov 16 09:43]  timer.png
+│       ├── [Nov 16 09:43]  trackoer-ga.js
+│       ├── [Nov 16 09:43]  ufo.js
+│       ├── [Nov 16 09:43]  videodvd.png
+│       ├── [Nov 16 09:43]  video.png
+│       ├── [Nov 16 09:43]  wallchart.png
+│       ├── [Nov 16 09:43]  webchat.png
+│       ├── [Nov 16 09:43]  weblink.png
+│       ├── [Nov 16 09:43]  wiki.png
+│       └── [Nov 16 09:43]  yahoo-min.js
+├── [Nov 16 09:49]  dir.txt
+├── [Nov 16 09:49]  files.txt
+├── [Nov 16 09:46]  introduction_to_bookkeeping_and_accounting
+│   ├── [Nov 16 09:43]  images
+│   │   ├── [Nov 16 09:43]  image10.png
+│   │   ├── [Nov 16 09:43]  image11.png
+│   │   ├── [Nov 16 09:43]  image12.png
+│   │   ├── [Nov 16 09:43]  image13.png
+│   │   ├── [Nov 16 09:43]  image14.png
+│   │   ├── [Nov 16 09:43]  image15.png
+│   │   ├── [Nov 16 09:43]  image16.png
+│   │   ├── [Nov 16 09:43]  image17.png
+│   │   ├── [Nov 16 09:43]  image18.png
+│   │   ├── [Nov 16 09:43]  image19.png
+│   │   ├── [Nov 16 09:43]  image1.png
+│   │   ├── [Nov 16 09:43]  image20.png
+│   │   ├── [Nov 16 09:43]  image21.png
+│   │   ├── [Nov 16 09:43]  image22.png
+│   │   ├── [Nov 16 09:43]  image23.png
+│   │   ├── [Nov 16 09:43]  image24.jpg
+│   │   ├── [Nov 16 09:43]  image25.jpg
+│   │   ├── [Nov 16 09:43]  image26.png
+│   │   ├── [Nov 16 09:43]  image27.png
+│   │   ├── [Nov 16 09:43]  image28.png
+│   │   ├── [Nov 16 09:43]  image29.png
+│   │   ├── [Nov 16 09:43]  image2.png
+│   │   ├── [Nov 16 09:43]  image30.png
+│   │   ├── [Nov 16 09:43]  image31.png
+│   │   ├── [Nov 16 09:43]  image32.png
+│   │   ├── [Nov 16 09:43]  image33.png
+│   │   ├── [Nov 16 09:43]  image34.png
+│   │   ├── [Nov 16 09:43]  image3.png
+│   │   ├── [Nov 16 09:43]  image4.png
+│   │   ├── [Nov 16 09:43]  image5.png
+│   │   ├── [Nov 16 09:43]  image6.png
+│   │   ├── [Nov 16 09:43]  image7.png
+│   │   ├── [Nov 16 09:43]  image8.png
+│   │   └── [Nov 16 09:43]  image9.png
+│   ├── [Nov 16 09:43]  index.html
+│   ├── [Nov 16 09:43]  introduction_to_bookkeeping_and_accounting.do (1).html
+│   ├── [Nov 16 09:31]  introduction_to_bookkeeping_and_accounting.docx.zip
+│   └── [Nov 16 09:30]  introduction_to_bookkeeping_and_accounting_printable.pdf
+├── [Nov 16 09:47]  liquidity_management
+│   ├── [Nov 16 09:43]  index.html
+│   ├── [Nov 16 09:43]  Items
+│   │   ├── [Nov 16 09:43]  copyright-full.html
+│   │   ├── [Nov 16 09:43]  _d3c986e615af52d98ee2159f5114e2c4bec9ff99_ol_skeleton_keeponlearning_image.jpg
+│   │   ├── [Nov 16 09:43]  _ebe87d0a315778902c1855d7fe95299d36b40e64_b841_u2_img1_engineering-work_22p.jpg
+│   │   ├── [Nov 16 09:43]  x_0_b862_1__introduction.html
+│   │   ├── [Nov 16 09:43]  x_10_b862_1_5.html
+│   │   ├── [Nov 16 09:43]  x_11_b862_1_5_1.html
+│   │   ├── [Nov 16 09:43]  x_12_b862_1_5_2.html
+│   │   ├── [Nov 16 09:43]  x_13_b862_1_6.html
+│   │   ├── [Nov 16 09:43]  x_14_b862_1_7.html
+│   │   ├── [Nov 16 09:43]  x_15_b862_1__references.html
+│   │   ├── [Nov 16 09:43]  x_16_b862_1__acknowledgements.html
+│   │   ├── [Nov 16 09:43]  x_1_b862_1__learningoutcomes.html
+│   │   ├── [Nov 16 09:43]  x_2_b862_1_1.html
+│   │   ├── [Nov 16 09:43]  x_3_b862_1_1_1.html
+│   │   ├── [Nov 16 09:43]  x_4_b862_1_1_2.html
+│   │   ├── [Nov 16 09:43]  x_5_b862_1_1_3.html
+│   │   ├── [Nov 16 09:43]  x_6_b862_1_1_4.html
+│   │   ├── [Nov 16 09:43]  x_7_b862_1_2.html
+│   │   ├── [Nov 16 09:43]  x_8_b862_1_3.html
+│   │   ├── [Nov 16 09:43]  x_9_b862_1_4.html
+│   │   └── [Nov 16 09:43]  x_b862_1__descriptiond0e286.html
+│   ├── [Nov 16 09:35]  liquidity_management.html.zip
+│   ├── [Nov 16 09:35]  liquidity_management_printable.pdf
+│   └── [Nov 16 09:43]  Shared
+│       ├── [Nov 16 09:43]  1d12a.png
+│       ├── [Nov 16 09:43]  1d12b.png
+│       ├── [Nov 16 09:43]  1d132.png
+│       ├── [Nov 16 09:43]  1d133.png
+│       ├── [Nov 16 09:43]  1d134.png
+│       ├── [Nov 16 09:43]  1d135.png
+│       ├── [Nov 16 09:43]  1d13d.png
+│       ├── [Nov 16 09:43]  1d13e.png
+│       ├── [Nov 16 09:43]  1d13f.png
+│       ├── [Nov 16 09:43]  1d140.png
+│       ├── [Nov 16 09:43]  1d15d.png
+│       ├── [Nov 16 09:43]  1d15e.dot.png
+│       ├── [Nov 16 09:43]  1d15e.png
+│       ├── [Nov 16 09:43]  1d15f.dot.png
+│       ├── [Nov 16 09:43]  1d15f.png
+│       ├── [Nov 16 09:43]  1d160.dot.png
+│       ├── [Nov 16 09:43]  1d160dot.png
+│       ├── [Nov 16 09:43]  1d160.png
+│       ├── [Nov 16 09:43]  1d161.dot.png
+│       ├── [Nov 16 09:43]  1d161.png
+│       ├── [Nov 16 09:43]  1d162.png
+│       ├── [Nov 16 09:43]  1d18f.double.png
+│       ├── [Nov 16 09:43]  1d18f.png
+│       ├── [Nov 16 09:43]  1d191.double.png
+│       ├── [Nov 16 09:43]  1d191.png
+│       ├── [Nov 16 09:43]  266d.png
+│       ├── [Nov 16 09:43]  266e.png
+│       ├── [Nov 16 09:43]  266f.png
+│       ├── [Nov 16 09:43]  302.1.png
+│       ├── [Nov 16 09:43]  302.2.png
+│       ├── [Nov 16 09:43]  302.3.png
+│       ├── [Nov 16 09:43]  302.4.png
+│       ├── [Nov 16 09:43]  302.5.png
+│       ├── [Nov 16 09:43]  302.6.png
+│       ├── [Nov 16 09:43]  302.7.png
+│       ├── [Nov 16 09:43]  accessibilityinfo.png
+│       ├── [Nov 16 09:43]  address.png
+│       ├── [Nov 16 09:43]  animation-min.js
+│       ├── [Nov 16 09:43]  assessmentguide.png
+│       ├── [Nov 16 09:43]  assessment.png
+│       ├── [Nov 16 09:43]  audio.png
+│       ├── [Nov 16 09:43]  blog.png
+│       ├── [Nov 16 09:43]  book.png
+│       ├── [Nov 16 09:43]  calculator.png
+│       ├── [Nov 16 09:43]  calendar.png
+│       ├── [Nov 16 09:43]  card.png
+│       ├── [Nov 16 09:43]  cd.png
+│       ├── [Nov 16 09:43]  computer.png
+│       ├── [Nov 16 09:43]  connection-min.js
+│       ├── [Nov 16 09:43]  copyright.png
+│       ├── [Nov 16 09:43]  courseguide.png
+│       ├── [Nov 16 09:43]  course.png
+│       ├── [Nov 16 09:43]  dom-min.js
+│       ├── [Nov 16 09:43]  dragdrop-min.js
+│       ├── [Nov 16 09:43]  dvd.png
+│       ├── [Nov 16 09:43]  email.png
+│       ├── [Nov 16 09:43]  enquiryform.png
+│       ├── [Nov 16 09:43]  event-min.js
+│       ├── [Nov 16 09:43]  expressinstall.swf
+│       ├── [Nov 16 09:43]  extra.js
+│       ├── [Nov 16 09:43]  fax.png
+│       ├── [Nov 16 09:43]  forum.png
+│       ├── [Nov 16 09:43]  help.png
+│       ├── [Nov 16 09:43]  inperson.png
+│       ├── [Nov 16 09:43]  instantmessaging.png
+│       ├── [Nov 16 09:43]  learningjournal.png
+│       ├── [Nov 16 09:43]  longactivity.png
+│       ├── [Nov 16 09:43]  main_logo.png
+│       ├── [Nov 16 09:43]  mediaplayer.swf
+│       ├── [Nov 16 09:43]  mediumactivity.png
+│       ├── [Nov 16 09:43]  musicdvd.png
+│       ├── [Nov 16 09:43]  mystuff.png
+│       ├── [Nov 16 09:43]  newwindow.png
+│       ├── [Nov 16 09:43]  notes.png
+│       ├── [Nov 16 09:43]  offlineactivity.png
+│       ├── [Nov 16 09:43]  onlineactivity.png
+│       ├── [Nov 16 09:43]  onlinecomputer.png
+│       ├── [Nov 16 09:43]  onlineglossary.png
+│       ├── [Nov 16 09:43]  oucontent.js
+│       ├── [Nov 16 09:43]  oucontent-js.css
+│       ├── [Nov 16 09:43]  oulogo-56.jpg
+│       ├── [Nov 16 09:43]  phone.png
+│       ├── [Nov 16 09:43]  practicalactivity.png
+│       ├── [Nov 16 09:43]  reader.png
+│       ├── [Nov 16 09:43]  reflection.png
+│       ├── [Nov 16 09:43]  researchmethods.png
+│       ├── [Nov 16 09:43]  shortactivity.png
+│       ├── [Nov 16 09:43]  studyguide.png
+│       ├── [Nov 16 09:43]  study.png
+│       ├── [Nov 16 09:43]  styles.css
+│       ├── [Nov 16 09:43]  timer.png
+│       ├── [Nov 16 09:43]  trackoer-ga.js
+│       ├── [Nov 16 09:43]  ufo.js
+│       ├── [Nov 16 09:43]  videodvd.png
+│       ├── [Nov 16 09:43]  video.png
+│       ├── [Nov 16 09:43]  wallchart.png
+│       ├── [Nov 16 09:43]  webchat.png
+│       ├── [Nov 16 09:43]  weblink.png
+│       ├── [Nov 16 09:43]  wiki.png
+│       └── [Nov 16 09:43]  yahoo-min.js
+├── [Nov 16 09:47]  organisations_and_the_financial_system
+│   ├── [Nov 16 09:44]  index.html
+│   ├── [Nov 16 09:44]  Items
+│   │   ├── [Nov 16 09:44]  _1a9e5e7ea2e025ce6e6ecebd2d12fc88c0a144ff_b294-u02-stock-ex
+│   │   │   ├── [Nov 16 09:43]  css
+│   │   │   │   └── [Nov 16 09:43]  style.css
+│   │   │   ├── [Nov 16 09:44]  img
+│   │   │   │   ├── [Nov 16 09:43]  b294_u02_amsterdam_bar.svg
+│   │   │   │   ├── [Nov 16 09:43]  b294_u02_amsterdam_logo.svg
+│   │   │   │   ├── [Nov 16 09:43]  b294_u02_frankfurt_bar.svg
+│   │   │   │   ├── [Nov 16 09:43]  b294_u02_frankfurt_logo.svg
+│   │   │   │   ├── [Nov 16 09:43]  b294_u02_hongkong_bar.svg
+│   │   │   │   ├── [Nov 16 09:43]  b294_u02_hongkong_logo.svg
+│   │   │   │   ├── [Nov 16 09:43]  b294_u02_london_bar.svg
+│   │   │   │   ├── [Nov 16 09:43]  b294_u02_london_logo.svg
+│   │   │   │   ├── [Nov 16 09:43]  b294_u02_map_cities.svg
+│   │   │   │   ├── [Nov 16 09:43]  b294_u02_newyork0_bar.svg
+│   │   │   │   ├── [Nov 16 09:43]  b294_u02_newyork0_logo.svg
+│   │   │   │   ├── [Nov 16 09:43]  b294_u02_newyork1_bar.svg
+│   │   │   │   ├── [Nov 16 09:43]  b294_u02_newyork1_logo.svg
+│   │   │   │   ├── [Nov 16 09:43]  b294_u02_shanghai_bar.svg
+│   │   │   │   ├── [Nov 16 09:44]  b294_u02_shanghai_logo.svg
+│   │   │   │   ├── [Nov 16 09:44]  b294_u02_shenzhen_bar.svg
+│   │   │   │   ├── [Nov 16 09:44]  b294_u02_shenzhen_logo.svg
+│   │   │   │   ├── [Nov 16 09:44]  b294_u02_tokyo_bar.svg
+│   │   │   │   ├── [Nov 16 09:44]  b294_u02_tokyo_logo.svg
+│   │   │   │   ├── [Nov 16 09:44]  b294_u02_toronto_bar.svg
+│   │   │   │   └── [Nov 16 09:44]  b294_u02_toronto_logo.svg
+│   │   │   ├── [Nov 16 09:43]  index.html
+│   │   │   └── [Nov 16 09:44]  js
+│   │   │       ├── [Nov 16 09:44]  main.min.js
+│   │   │       └── [Nov 16 09:44]  svg4everybody.js
+│   │   ├── [Nov 16 09:43]  _2a361e66f2eee8d90f0379d9894b48c49b59ec07_b294_2020d_vid307_720x1280.mp4
+│   │   ├── [Nov 16 09:44]  _4e196af1a20c5b0e5dfa838c4ca3e9227e374279_b294_u02_sess01_f002
+│   │   │   └── [Nov 16 09:44]  index.html
+│   │   ├── [Nov 16 09:44]  _5448e1276fd7eff3d3b12186f86ae4f97a59425f_b294_calculator
+│   │   │   ├── [Nov 16 09:44]  css
+│   │   │   │   ├── [Nov 16 09:44]  reset.css
+│   │   │   │   ├── [Nov 16 09:44]  test.css
+│   │   │   │   ├── [Nov 16 09:44]  windows10.css
+│   │   │   │   └── [Nov 16 09:44]  windows7.css
+│   │   │   ├── [Nov 16 09:44]  index.html
+│   │   │   ├── [Nov 16 09:44]  js
+│   │   │   │   ├── [Nov 16 09:44]  math.js
+│   │   │   │   └── [Nov 16 09:44]  math.min.js
+│   │   │   └── [Nov 16 09:44]  vleapi.1.js
+│   │   ├── [Nov 16 09:44]  _5e149310a468a8c6cbab44689dcdf31dc897c5cb_b294_blk01_u02_sess01_a2_10
+│   │   │   ├── [Nov 16 09:44]  css
+│   │   │   │   └── [Nov 16 09:44]  style.css
+│   │   │   ├── [Nov 16 09:44]  index.html
+│   │   │   └── [Nov 16 09:44]  js
+│   │   │       └── [Nov 16 09:44]  main.min.js
+│   │   ├── [Nov 16 09:43]  b204_20d_vid307_still.jpg
+│   │   ├── [Nov 16 09:43]  b294_2020d_vwr003_640x360.mp4
+│   │   ├── [Nov 16 09:43]  b294_2020d_vwr003_640x360_still.jpg
+│   │   ├── [Nov 16 09:43]  b294_bank_loans.tif.jpg
+│   │   ├── [Nov 16 09:43]  b294_bbc_postoffice_networkrail.tif.png
+│   │   ├── [Nov 16 09:43]  b294_birds_eye_view.tif.jpg
+│   │   ├── [Nov 16 09:43]  b294_blood_pressure.tif.jpg
+│   │   ├── [Nov 16 09:43]  b294_bond_issuance_1.tif
+│   │   ├── [Nov 16 09:43]  b294_conglomerate_mergers.eps.png
+│   │   ├── [Nov 16 09:43]  b294_credit_ratings.tif.jpg
+│   │   ├── [Nov 16 09:43]  b294_crowdfunding.tif.jpg
+│   │   ├── [Nov 16 09:43]  b294_figure_11.tif.png
+│   │   ├── [Nov 16 09:43]  b294_figure_13.eps.png
+│   │   ├── [Nov 16 09:43]  b294_figure_6.eps.png
+│   │   ├── [Nov 16 09:43]  b294_figure_9.eps.png
+│   │   ├── [Nov 16 09:43]  b294_flash_trucks.tif.jpg
+│   │   ├── [Nov 16 09:43]  b294_horizontal_merger.eps.png
+│   │   ├── [Nov 16 09:43]  b294_introduction.tif
+│   │   ├── [Nov 16 09:43]  b294_nasdaq.tif
+│   │   ├── [Nov 16 09:43]  b294_new_yourk_stock_exchange.tif.jpg
+│   │   ├── [Nov 16 09:43]  b294_retained_earnings.tif.jpg
+│   │   ├── [Nov 16 09:43]  b294_stock_issuance.tif.jpg
+│   │   ├── [Nov 16 09:43]  b294_vertical_mergers.eps.png
+│   │   ├── [Nov 16 09:44]  _c049c90b7053882d80909982e2500f38052ad6c9_b294_game_a_2_15
+│   │   │   ├── [Nov 16 09:44]  audio
+│   │   │   │   ├── [Nov 16 09:44]  b294_2020d_Box_13.mp3
+│   │   │   │   ├── [Nov 16 09:44]  b294_2020d_Box_14.mp3
+│   │   │   │   ├── [Nov 16 09:44]  b294_2020d_Box_15.mp3
+│   │   │   │   ├── [Nov 16 09:44]  b294_2020d_Box_16.mp3
+│   │   │   │   ├── [Nov 16 09:44]  b294_2020d_Box_24.mp3
+│   │   │   │   ├── [Nov 16 09:44]  b294_2020d_Box_25.mp3
+│   │   │   │   ├── [Nov 16 09:44]  b294_2020d_Box_26.mp3
+│   │   │   │   ├── [Nov 16 09:44]  b294_2020d_Box_27.mp3
+│   │   │   │   ├── [Nov 16 09:44]  b294_2020d_Box_32.mp3
+│   │   │   │   ├── [Nov 16 09:44]  b294_2020d_Box_33.mp3
+│   │   │   │   ├── [Nov 16 09:44]  b294_2020d_Box_34.mp3
+│   │   │   │   ├── [Nov 16 09:44]  b294_2020d_Box_5.mp3
+│   │   │   │   ├── [Nov 16 09:44]  b294_2020d_Box_6.mp3
+│   │   │   │   ├── [Nov 16 09:44]  b294_2020d_Box_7.mp3
+│   │   │   │   ├── [Nov 16 09:44]  b294_step2_opta.mp3
+│   │   │   │   └── [Nov 16 09:44]  b294_step2_optb.mp3
+│   │   │   ├── [Nov 16 09:44]  css
+│   │   │   │   └── [Nov 16 09:44]  w3.css
+│   │   │   ├── [Nov 16 09:44]  dialog-polyfill.js
+│   │   │   ├── [Nov 16 09:44]  images
+│   │   │   │   ├── [Nov 16 09:44]  6.svg
+│   │   │   │   ├── [Nov 16 09:44]  9.svg
+│   │   │   │   ├── [Nov 16 09:44]  advisor_5.png
+│   │   │   │   ├── [Nov 16 09:44]  b294_sebastian.png
+│   │   │   │   ├── [Nov 16 09:44]  bank.svg
+│   │   │   │   ├── [Nov 16 09:44]  business-advisor_1.png
+│   │   │   │   ├── [Nov 16 09:44]  business-advisor_2.png
+│   │   │   │   ├── [Nov 16 09:44]  business-advisor_3.png
+│   │   │   │   ├── [Nov 16 09:44]  business-advisor_4.png
+│   │   │   │   ├── [Nov 16 09:44]  business-advisor.png
+│   │   │   │   ├── [Nov 16 09:44]  business_angel.svg
+│   │   │   │   ├── [Nov 16 09:44]  debt_financing.svg
+│   │   │   │   ├── [Nov 16 09:44]  emma.png
+│   │   │   │   ├── [Nov 16 09:44]  equity_crowdfunding.svg
+│   │   │   │   ├── [Nov 16 09:44]  equity_financing.svg
+│   │   │   │   ├── [Nov 16 09:44]  experience.svg
+│   │   │   │   ├── [Nov 16 09:44]  lender.svg
+│   │   │   │   ├── [Nov 16 09:44]  longterm_debt.svg
+│   │   │   │   ├── [Nov 16 09:44]  mix_financing.svg
+│   │   │   │   ├── [Nov 16 09:44]  phone.svg
+│   │   │   │   ├── [Nov 16 09:44]  retained_earnings.svg
+│   │   │   │   ├── [Nov 16 09:44]  reward_crowdfunding.svg
+│   │   │   │   ├── [Nov 16 09:44]  sebastian.jpg
+│   │   │   │   ├── [Nov 16 09:44]  short_term_debt.svg
+│   │   │   │   ├── [Nov 16 09:44]  star.svg
+│   │   │   │   ├── [Nov 16 09:44]  step1_768px.jpg
+│   │   │   │   ├── [Nov 16 09:44]  step1_768px.png
+│   │   │   │   ├── [Nov 16 09:44]  step2_768px.jpg
+│   │   │   │   ├── [Nov 16 09:44]  step2_768px.png
+│   │   │   │   ├── [Nov 16 09:44]  step3_768px.jpg
+│   │   │   │   ├── [Nov 16 09:44]  step3_768px.png
+│   │   │   │   ├── [Nov 16 09:44]  step4_768px.jpg
+│   │   │   │   ├── [Nov 16 09:44]  step4_768px.png
+│   │   │   │   ├── [Nov 16 09:44]  step5_768px.jpg
+│   │   │   │   ├── [Nov 16 09:44]  step5_768px.png
+│   │   │   │   ├── [Nov 16 09:44]  venture_capitalist.svg
+│   │   │   │   ├── [Nov 16 09:44]  your-score.png
+│   │   │   │   └── [Nov 16 09:44]  your-score-template.png
+│   │   │   ├── [Nov 16 09:44]  index.html
+│   │   │   ├── [Nov 16 09:44]  saver.js
+│   │   │   └── [Nov 16 09:44]  vleapi.1.js
+│   │   ├── [Nov 16 09:43]  copyright-full.html
+│   │   ├── [Nov 16 09:44]  _ec09037edb15b7d3866e8e828d0d10a3301cdadd_b294_blk01_u02_sess01_a2_7
+│   │   │   ├── [Nov 16 09:44]  css
+│   │   │   │   └── [Nov 16 09:44]  style.css
+│   │   │   ├── [Nov 16 09:44]  img
+│   │   │   │   └── [Nov 16 09:44]  tree.svg
+│   │   │   ├── [Nov 16 09:44]  index.html
+│   │   │   ├── [Nov 16 09:44]  js
+│   │   │   │   ├── [Nov 16 09:44]  main.min.js
+│   │   │   │   └── [Nov 16 09:44]  svg4everybody.js
+│   │   │   └── [Nov 16 09:44]  vleapi.1.js
+│   │   ├── [Nov 16 09:43]  x_0_b294_1__introduction.html
+│   │   ├── [Nov 16 09:43]  x_10_b294_1_1_3_1.html
+│   │   ├── [Nov 16 09:43]  x_11_b294_1_2.html
+│   │   ├── [Nov 16 09:43]  x_12_b294_1_2_1.html
+│   │   ├── [Nov 16 09:43]  x_13_b294_1_2_2.html
+│   │   ├── [Nov 16 09:43]  x_14_b294_1_2_3.html
+│   │   ├── [Nov 16 09:43]  x_15_b294_1_2_4.html
+│   │   ├── [Nov 16 09:43]  x_16_b294_1_2_5.html
+│   │   ├── [Nov 16 09:43]  x_17_b294_1_3.html
+│   │   ├── [Nov 16 09:43]  x_18_b294_1_3_1.html
+│   │   ├── [Nov 16 09:43]  x_19_b294_1_3_2.html
+│   │   ├── [Nov 16 09:43]  x_1_b294_1__learningoutcomes.html
+│   │   ├── [Nov 16 09:43]  x_20_b294_1_3_2_1.html
+│   │   ├── [Nov 16 09:43]  x_21_b294_1_3_2_2.html
+│   │   ├── [Nov 16 09:43]  x_22_b294_1_3_3.html
+│   │   ├── [Nov 16 09:43]  x_23_b294_1_3_3_1.html
+│   │   ├── [Nov 16 09:43]  x_24_b294_1_3_3_2.html
+│   │   ├── [Nov 16 09:43]  x_25_b294_1_3_4.html
+│   │   ├── [Nov 16 09:43]  x_26_b294_1_4.html
+│   │   ├── [Nov 16 09:43]  x_27_b294_1_4_1.html
+│   │   ├── [Nov 16 09:43]  x_28_b294_1_4_2.html
+│   │   ├── [Nov 16 09:43]  x_29_b294_1_4_2_1.html
+│   │   ├── [Nov 16 09:43]  x_2_b294_1_1.html
+│   │   ├── [Nov 16 09:43]  x_30_b294_1_4_3.html
+│   │   ├── [Nov 16 09:43]  x_31_b294_1_4_4.html
+│   │   ├── [Nov 16 09:43]  x_32_b294_1_5.html
+│   │   ├── [Nov 16 09:43]  x_33_b294_1_6.html
+│   │   ├── [Nov 16 09:43]  x_34_b294_1__references.html
+│   │   ├── [Nov 16 09:43]  x_35_b294_1__acknowledgements.html
+│   │   ├── [Nov 16 09:43]  x_3_b294_1_1_1.html
+│   │   ├── [Nov 16 09:43]  x_4_b294_1_1_2.html
+│   │   ├── [Nov 16 09:43]  x_5_b294_1_1_2_1.html
+│   │   ├── [Nov 16 09:43]  x_6_b294_1_1_2_2.html
+│   │   ├── [Nov 16 09:43]  x_7_b294_1_1_2_3.html
+│   │   ├── [Nov 16 09:43]  x_8_b294_1_1_2_4.html
+│   │   ├── [Nov 16 09:43]  x_9_b294_1_1_3.html
+│   │   ├── [Nov 16 09:43]  x_b294_1__descriptiond0e1634.html
+│   │   ├── [Nov 16 09:43]  x_b294_1__descriptiond0e1781.html
+│   │   ├── [Nov 16 09:43]  x_b294_1__descriptiond0e3579.html
+│   │   ├── [Nov 16 09:43]  x_b294_1__transcriptd0e1920.html
+│   │   ├── [Nov 16 09:43]  x_b294_1__transcriptd0e2186.html
+│   │   └── [Nov 16 09:43]  x_b294_1__transcriptd0e341.html
+│   ├── [Nov 16 09:28]  organisations_and_the_financial_system.html.zip
+│   └── [Nov 16 09:44]  Shared
+│       ├── [Nov 16 09:44]  3.17.2
+│       │   ├── [Nov 16 09:44]  anim-base
+│       │   │   └── [Nov 16 09:44]  anim-base-min.js
+│       │   ├── [Nov 16 09:44]  anim-color
+│       │   │   └── [Nov 16 09:44]  anim-color-min.js
+│       │   ├── [Nov 16 09:44]  anim-curve
+│       │   │   └── [Nov 16 09:44]  anim-curve-min.js
+│       │   ├── [Nov 16 09:44]  anim-easing
+│       │   │   └── [Nov 16 09:44]  anim-easing-min.js
+│       │   ├── [Nov 16 09:44]  anim-node-plugin
+│       │   │   └── [Nov 16 09:44]  anim-node-plugin-min.js
+│       │   ├── [Nov 16 09:44]  anim-scroll
+│       │   │   └── [Nov 16 09:44]  anim-scroll-min.js
+│       │   ├── [Nov 16 09:44]  anim-xy
+│       │   │   └── [Nov 16 09:44]  anim-xy-min.js
+│       │   ├── [Nov 16 09:44]  attribute-base
+│       │   │   └── [Nov 16 09:44]  attribute-base-min.js
+│       │   ├── [Nov 16 09:44]  attribute-core
+│       │   │   └── [Nov 16 09:44]  attribute-core-min.js
+│       │   ├── [Nov 16 09:44]  attribute-extras
+│       │   │   └── [Nov 16 09:44]  attribute-extras-min.js
+│       │   ├── [Nov 16 09:44]  attribute-observable
+│       │   │   └── [Nov 16 09:44]  attribute-observable-min.js
+│       │   ├── [Nov 16 09:44]  base-base
+│       │   │   └── [Nov 16 09:44]  base-base-min.js
+│       │   ├── [Nov 16 09:44]  base-build
+│       │   │   └── [Nov 16 09:44]  base-build-min.js
+│       │   ├── [Nov 16 09:44]  base-core
+│       │   │   └── [Nov 16 09:44]  base-core-min.js
+│       │   ├── [Nov 16 09:44]  base-observable
+│       │   │   └── [Nov 16 09:44]  base-observable-min.js
+│       │   ├── [Nov 16 09:44]  base-pluginhost
+│       │   │   └── [Nov 16 09:44]  base-pluginhost-min.js
+│       │   ├── [Nov 16 09:44]  color-base
+│       │   │   └── [Nov 16 09:44]  color-base-min.js
+│       │   ├── [Nov 16 09:44]  dom-base
+│       │   │   └── [Nov 16 09:44]  dom-base-min.js
+│       │   ├── [Nov 16 09:44]  dom-core
+│       │   │   └── [Nov 16 09:44]  dom-core-min.js
+│       │   ├── [Nov 16 09:44]  dom-screen
+│       │   │   └── [Nov 16 09:44]  dom-screen-min.js
+│       │   ├── [Nov 16 09:44]  dom-style
+│       │   │   └── [Nov 16 09:44]  dom-style-min.js
+│       │   ├── [Nov 16 09:44]  escape
+│       │   │   └── [Nov 16 09:44]  escape-min.js
+│       │   ├── [Nov 16 09:44]  event-base
+│       │   │   └── [Nov 16 09:44]  event-base-min.js
+│       │   ├── [Nov 16 09:44]  event-custom-base
+│       │   │   └── [Nov 16 09:44]  event-custom-base-min.js
+│       │   ├── [Nov 16 09:44]  event-custom-complex
+│       │   │   └── [Nov 16 09:44]  event-custom-complex-min.js
+│       │   ├── [Nov 16 09:44]  event-delegate
+│       │   │   └── [Nov 16 09:44]  event-delegate-min.js
+│       │   ├── [Nov 16 09:44]  event-flick
+│       │   │   └── [Nov 16 09:44]  event-flick-min.js
+│       │   ├── [Nov 16 09:44]  event-focus
+│       │   │   └── [Nov 16 09:44]  event-focus-min.js
+│       │   ├── [Nov 16 09:44]  event-hover
+│       │   │   └── [Nov 16 09:44]  event-hover-min.js
+│       │   ├── [Nov 16 09:44]  event-key
+│       │   │   └── [Nov 16 09:44]  event-key-min.js
+│       │   ├── [Nov 16 09:44]  event-mouseenter
+│       │   │   └── [Nov 16 09:44]  event-mouseenter-min.js
+│       │   ├── [Nov 16 09:44]  event-mousewheel
+│       │   │   └── [Nov 16 09:44]  event-mousewheel-min.js
+│       │   ├── [Nov 16 09:44]  event-move
+│       │   │   └── [Nov 16 09:44]  event-move-min.js
+│       │   ├── [Nov 16 09:44]  event-outside
+│       │   │   └── [Nov 16 09:44]  event-outside-min.js
+│       │   ├── [Nov 16 09:44]  event-resize
+│       │   │   └── [Nov 16 09:44]  event-resize-min.js
+│       │   ├── [Nov 16 09:44]  event-synthetic
+│       │   │   └── [Nov 16 09:44]  event-synthetic-min.js
+│       │   ├── [Nov 16 09:44]  event-tap
+│       │   │   └── [Nov 16 09:44]  event-tap-min.js
+│       │   ├── [Nov 16 09:44]  event-touch
+│       │   │   └── [Nov 16 09:44]  event-touch-min.js
+│       │   ├── [Nov 16 09:44]  event-valuechange
+│       │   │   └── [Nov 16 09:44]  event-valuechange-min.js
+│       │   ├── [Nov 16 09:44]  features
+│       │   │   └── [Nov 16 09:44]  features-min.js
+│       │   ├── [Nov 16 09:44]  node-base
+│       │   │   └── [Nov 16 09:44]  node-base-min.js
+│       │   ├── [Nov 16 09:44]  node-core
+│       │   │   └── [Nov 16 09:44]  node-core-min.js
+│       │   ├── [Nov 16 09:44]  node-event-delegate
+│       │   │   └── [Nov 16 09:44]  node-event-delegate-min.js
+│       │   ├── [Nov 16 09:44]  node-pluginhost
+│       │   │   └── [Nov 16 09:44]  node-pluginhost-min.js
+│       │   ├── [Nov 16 09:44]  node-screen
+│       │   │   └── [Nov 16 09:44]  node-screen-min.js
+│       │   ├── [Nov 16 09:44]  node-style
+│       │   │   └── [Nov 16 09:44]  node-style-min.js
+│       │   ├── [Nov 16 09:44]  oop
+│       │   │   └── [Nov 16 09:44]  oop-min.js
+│       │   ├── [Nov 16 09:44]  pluginhost-base
+│       │   │   └── [Nov 16 09:44]  pluginhost-base-min.js
+│       │   ├── [Nov 16 09:44]  pluginhost-config
+│       │   │   └── [Nov 16 09:44]  pluginhost-config-min.js
+│       │   ├── [Nov 16 09:44]  selector
+│       │   │   └── [Nov 16 09:44]  selector-min.js
+│       │   ├── [Nov 16 09:44]  selector-native
+│       │   │   └── [Nov 16 09:44]  selector-native-min.js
+│       │   ├── [Nov 16 09:44]  swf
+│       │   │   └── [Nov 16 09:44]  swf-min.js
+│       │   ├── [Nov 16 09:44]  swfdetect
+│       │   │   └── [Nov 16 09:44]  swfdetect-min.js
+│       │   ├── [Nov 16 09:44]  transition
+│       │   │   └── [Nov 16 09:44]  transition-min.js
+│       │   ├── [Nov 16 09:44]  yui
+│       │   │   └── [Nov 16 09:44]  yui-min.js
+│       │   └── [Nov 16 09:44]  yui-base
+│       │       └── [Nov 16 09:44]  yui-base-min.js
+│       ├── [Nov 16 09:44]  3d.svg
+│       ├── [Nov 16 09:44]  accessibilityinfo.svg
+│       ├── [Nov 16 09:44]  accessibility.svg
+│       ├── [Nov 16 09:44]  activity.svg
+│       ├── [Nov 16 09:44]  address.svg
+│       ├── [Nov 16 09:44]  altformats_styles.css
+│       ├── [Nov 16 09:44]  animations.js
+│       ├── [Nov 16 09:44]  assessmentguide.svg
+│       ├── [Nov 16 09:44]  assessment.svg
+│       ├── [Nov 16 09:44]  audio_recording.svg
+│       ├── [Nov 16 09:44]  audio.svg
+│       ├── [Nov 16 09:44]  autoscroll.js
+│       ├── [Nov 16 09:44]  blog.svg
+│       ├── [Nov 16 09:44]  book.svg
+│       ├── [Nov 16 09:44]  bullet_ita.svg
+│       ├── [Nov 16 09:44]  bullet_itq.svg
+│       ├── [Nov 16 09:44]  buttons.css
+│       ├── [Nov 16 09:44]  calculator.svg
+│       ├── [Nov 16 09:44]  calendar.svg
+│       ├── [Nov 16 09:44]  card.svg
+│       ├── [Nov 16 09:44]  cd.svg
+│       ├── [Nov 16 09:44]  chat.svg
+│       ├── [Nov 16 09:44]  cloud_based.svg
+│       ├── [Nov 16 09:44]  computer.svg
+│       ├── [Nov 16 09:44]  copyright.png
+│       ├── [Nov 16 09:44]  courseguide.svg
+│       ├── [Nov 16 09:44]  database.svg
+│       ├── [Nov 16 09:44]  disc.svg
+│       ├── [Nov 16 09:44]  download.svg
+│       ├── [Nov 16 09:44]  draft_post.svg
+│       ├── [Nov 16 09:44]  drag.js
+│       ├── [Nov 16 09:44]  dvd.svg
+│       ├── [Nov 16 09:44]  email.svg
+│       ├── [Nov 16 09:44]  enquiryform.svg
+│       ├── [Nov 16 09:44]  expressinstall.swf
+│       ├── [Nov 16 09:44]  external_link.svg
+│       ├── [Nov 16 09:44]  extra.js
+│       ├── [Nov 16 09:44]  favourite.svg
+│       ├── [Nov 16 09:44]  fax.svg
+│       ├── [Nov 16 09:44]  forum.svg
+│       ├── [Nov 16 09:44]  glossary.svg
+│       ├── [Nov 16 09:44]  guide.svg
+│       ├── [Nov 16 09:44]  help.svg
+│       ├── [Nov 16 09:44]  information.svg
+│       ├── [Nov 16 09:44]  instant_messaging.svg
+│       ├── [Nov 16 09:44]  instantmessaging.svg
+│       ├── [Nov 16 09:44]  internal_link.svg
+│       ├── [Nov 16 09:44]  invalidinput.svg
+│       ├── [Nov 16 09:44]  jquery-3.2.1.min.js
+│       ├── [Nov 16 09:44]  layout.css
+│       ├── [Nov 16 09:44]  learningjournal.svg
+│       ├── [Nov 16 09:44]  longactivity.svg
+│       ├── [Nov 16 09:44]  main.js
+│       ├── [Nov 16 09:44]  main_logo.png
+│       ├── [Nov 16 09:44]  matching_dnd.js
+│       ├── [Nov 16 09:44]  mediaplayer.swf
+│       ├── [Nov 16 09:44]  mediumactivity.svg
+│       ├── [Nov 16 09:44]  mod_oucontent.css
+│       ├── [Nov 16 09:44]  musicdvd.svg
+│       ├── [Nov 16 09:44]  mystuff.svg
+│       ├── [Nov 16 09:44]  newwindow.png
+│       ├── [Nov 16 09:44]  notes.svg
+│       ├── [Nov 16 09:44]  note.svg
+│       ├── [Nov 16 09:44]  offlineactivity.svg
+│       ├── [Nov 16 09:44]  onlineactivity.svg
+│       ├── [Nov 16 09:44]  onlinecompuuter.svg
+│       ├── [Nov 16 09:44]  onlineglossary.svg
+│       ├── [Nov 16 09:44]  online.svg
+│       ├── [Nov 16 09:44]  open_studio.svg
+│       ├── [Nov 16 09:44]  oucontent-extra.js
+│       ├── [Nov 16 09:44]  oucontent.js
+│       ├── [Nov 16 09:44]  oulogo-56.jpg
+│       ├── [Nov 16 09:44]  phone.svg
+│       ├── [Nov 16 09:44]  podcast.svg
+│       ├── [Nov 16 09:44]  portfolio.svg
+│       ├── [Nov 16 09:44]  post.svg
+│       ├── [Nov 16 09:44]  practicalactivity.svg
+│       ├── [Nov 16 09:44]  questionnaire.svg
+│       ├── [Nov 16 09:44]  reader.svg
+│       ├── [Nov 16 09:44]  reading_matter.svg
+│       ├── [Nov 16 09:44]  reflection.svg
+│       ├── [Nov 16 09:44]  require.min.js
+│       ├── [Nov 16 09:44]  researchmethods.svg
+│       ├── [Nov 16 09:44]  resource.svg
+│       ├── [Nov 16 09:44]  retry.svg
+│       ├── [Nov 16 09:44]  rightanswer.svg
+│       ├── [Nov 16 09:44]  scormfunctions.js
+│       ├── [Nov 16 09:44]  secondvoiceleft.png
+│       ├── [Nov 16 09:44]  secondvoiceright.png
+│       ├── [Nov 16 09:44]  settings.svg
+│       ├── [Nov 16 09:44]  shortactivity.svg
+│       ├── [Nov 16 09:44]  skills.svg
+│       ├── [Nov 16 09:44]  studyguide.svg
+│       ├── [Nov 16 09:44]  study.svg
+│       ├── [Nov 16 09:44]  styles.css
+│       ├── [Nov 16 09:44]  tabs.css
+│       ├── [Nov 16 09:44]  timed.svg
+│       ├── [Nov 16 09:44]  timer.svg
+│       ├── [Nov 16 09:44]  timing.svg
+│       ├── [Nov 16 09:44]  trackoer-ga.js
+│       ├── [Nov 16 09:44]  upload.svg
+│       ├── [Nov 16 09:44]  videodvd.svg
+│       ├── [Nov 16 09:44]  video.svg
+│       ├── [Nov 16 09:44]  wallchart.svg
+│       ├── [Nov 16 09:44]  webchat.svg
+│       ├── [Nov 16 09:44]  weblink.svg
+│       ├── [Nov 16 09:44]  wiki.svg
+│       └── [Nov 16 09:44]  wronganswer.svg
+└── [Nov 16 09:47]  purpose_and_role_of_bookkeeping_and_accounting
+    ├── [Nov 16 09:42]  images
+    │   ├── [Nov 16 09:42]  image10.png
+    │   ├── [Nov 16 09:42]  image11.png
+    │   ├── [Nov 16 09:42]  image12.png
+    │   ├── [Nov 16 09:42]  image13.png
+    │   ├── [Nov 16 09:42]  image14.png
+    │   ├── [Nov 16 09:42]  image15.jpg
+    │   ├── [Nov 16 09:42]  image16.jpg
+    │   ├── [Nov 16 09:42]  image17.png
+    │   ├── [Nov 16 09:42]  image18.png
+    │   ├── [Nov 16 09:42]  image19.png
+    │   ├── [Nov 16 09:42]  image1.png
+    │   ├── [Nov 16 09:42]  image20.png
+    │   ├── [Nov 16 09:42]  image21.png
+    │   ├── [Nov 16 09:42]  image22.png
+    │   ├── [Nov 16 09:42]  image23.png
+    │   ├── [Nov 16 09:42]  image24.png
+    │   ├── [Nov 16 09:42]  image25.png
+    │   ├── [Nov 16 09:42]  image26.png
+    │   ├── [Nov 16 09:42]  image27.jpg
+    │   ├── [Nov 16 09:42]  image28.jpg
+    │   ├── [Nov 16 09:42]  image29.jpg
+    │   ├── [Nov 16 09:42]  image2.png
+    │   ├── [Nov 16 09:42]  image30.png
+    │   ├── [Nov 16 09:42]  image31.jpg
+    │   ├── [Nov 16 09:42]  image32.jpg
+    │   ├── [Nov 16 09:42]  image33.jpg
+    │   ├── [Nov 16 09:42]  image34.png
+    │   ├── [Nov 16 09:42]  image35.png
+    │   ├── [Nov 16 09:42]  image36.png
+    │   ├── [Nov 16 09:42]  image37.png
+    │   ├── [Nov 16 09:42]  image3.png
+    │   ├── [Nov 16 09:42]  image4.png
+    │   ├── [Nov 16 09:42]  image5.png
+    │   ├── [Nov 16 09:42]  image6.png
+    │   ├── [Nov 16 09:42]  image7.png
+    │   ├── [Nov 16 09:42]  image8.png
+    │   └── [Nov 16 09:42]  image9.png
+    ├── [Nov 16 09:42]  index.html
+    ├── [Nov 16 09:42]  purpose_and_role_of_bookkeeping_a (1).html
+    ├── [Nov 16 09:33]  week_1__the_purpose_and_role_of_bookkeeping_and_accounting.doc.zip
+    └── [Nov 16 09:32]  week_1__the_purpose_and_role_of_bookkeeping_and_accounting_printable.pdf
+
+94 directories, 742 files

@@ -1,0 +1,196 @@
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+html {
+    color: #000;
+    background: #FFF;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+h1 {
+    font-weight: bold;
+    font-size: large;
+}
+
+p,
+h1 {
+    margin-bottom: 1em;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol,
+ul {}
+
+caption,
+th {
+    text-align: left
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%
+}
+
+legend {
+    color: #000
+}
+
+body {
+    font: 1.5rem arial, sans-serif;
+    word-wrap: break-word;
+    -ms-word-wrap: break-word
+}
+
+div.info {
+    position: relative;
+    border: 5px solid #A2B7B6;
+    border-top: none;
+    padding: 1% 3% 0;
+}
+
+div.exchange {
+    margin-bottom: 0.3em;
+}
+
+div.legend {
+    text-align: center;
+}
+
+span.name,
+span.cap {
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+img.logo {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: 30%;
+    height: 4em;
+}
+
+div.bar {
+    width: 100%;
+    margin-top: 1em;
+}
+
+svg {
+    display: inline-block;
+}
+
+#map-div {
+    font-size: 0;
+}
+
+.city-blob:hover {
+    outline: 2px solid #CA541F;
+}
+
+*:hover,
+*:focus {
+    outline: none;
+}
+
+.click:focus {
+    stroke-width: 2px;
+    stroke: #CA541F;
+}
+
+.click:hover {
+    stroke-width: 2px;
+    stroke: #97310c;
+}
+
+.city-text {
+    stroke: none !important;
+}

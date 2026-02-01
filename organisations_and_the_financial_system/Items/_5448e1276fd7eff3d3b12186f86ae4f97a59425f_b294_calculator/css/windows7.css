@@ -1,0 +1,46 @@
+ body {min-width: 280px;font:13px/1.231 arial, helvetica, clean, sans-serif; font-size:0.875em;/* line-height:1.4; */color:#333333;;overflow:auto;}
+    a {color:#1f536b;}
+    p {/*padding:0.5em 0;*/display:inline;}
+	p.number{color:#fff;}
+    /*button {border:solid 1px #c6c6c5; margin-right:1em; border-radius:3px; padding:4px 8px; color:#1f536b; background:#ffffff url(button_bg.png) repeat-x; font-size:99%; cursor:pointer;}
+    button[disabled] {color:#888888; background:#ffffff url(button_bg.png) repeat-x; cursor:default;}
+    .msg {border:solid 1px #cccccc; border-radius:0.2em; padding-left:3em;}*/
+  .container{min-width: 190px;width: 190px;}
+  .button{font-size:15px;text-align: center;}
+
+  .hidden{
+    display: none;
+}
+  #controls{ margin-top:15px;}
+  #calculatorspace{  margin:10px;}
+  #plus{color: blue;}
+  .calculatorcontainer{
+      height: 0; 
+      overflow: hidden;
+      transition: height 350ms ease-in-out;
+  }
+  .calculatorcontainer .is-visible{
+      display: block;
+    height: auto; }
+  .calculator {display: table;min-width: 280px;}
+  .minicalculator{ display: inline-block;}
+  .texttable{ display: inline-block;width:100%;;height:100%;text-align:right;}
+  .row {/*flex-direction:row; flex-wrap:no-wrap; justify-content:space-evenly; align-items:"flex-end";align-content:stretch;*/margin:10px;display: table-row;margin-bottom:10px;width:100%;}
+  .cell{display: table-cell;width:100%;text-align:right;float:right;}
+
+  .screen {width:280px;min-height: 48px;background-image: linear-gradient(180deg, #e7f0fb, #ffffff);border:1px solid #8e9cad;border-radius: 3px; margin:3px;}
+  button.number{margin:4px;width:40px;height:40px;border-radius: 3px; background-image: linear-gradient(180deg, #f7fbff, #eff4f9, #e7edf5, #eff8fd);border:1px solid #8797aa;}
+    button.number:hover, button.number:focus {background-image: linear-gradient(180deg, #fff0df, #ffe3c6, #ffcf6a, #ffed85);border:1px solid #ffdb00;}
+    button.number:active{background-image: linear-gradient(180deg, #eecb8e, #f5c97c, #f5bb57, #f2f0af);border:1px solid #c29b29;}
+  button.sign {margin:4px;width:40px;height:40px;border-radius: 3px; background-image: linear-gradient(180deg, #eef4fa, #e4ebf4, #d5e0ed, #d6e1ef);border:1px solid #8797aa;}
+    button.sign:hover, button.sign:focus{background-image: linear-gradient(180deg, #fff0df, #ffe3c6, #ffcf6a, #ffed85);border:1px solid #ffdb00;}
+    button.sign:active{background-image: linear-gradient(180deg, #eecb8e, #f5c97c, #f5bb57, #f2f0af);border:1px solid #c29b29;}
+  button.wide {width:88px;height:40px;margin:4px;border-radius: 3px; background-image:linear-gradient(180deg, #f7fbff, #eff4f9, #e7edf5, #eff8fd);border:1px solid #8797aa;}
+     button.wide:hover, button.widenumber:focus{background-image: linear-gradient(180deg, #fff0df, #ffe3c6, #ffcf6a, #ffed85);border:1px solid #ffdb00;}
+     button.wide:active{background-image: linear-gradient(180deg, #eecb8e, #f5c97c, #f5bb57, #f2f0af);border:1px solid #c29b29;}
+  button.tall {height:65px;width:40px;margin:4px;vertical-align:top;border-radius: 3px; background-image: linear-gradient(180deg,  #eef4fa, #e4ebf4, #d5e0ed, #d6e1ef);border:1px solid #8797aa;}
+    button.tall:hover, button.tallsign:focus{background-image: linear-gradient(180deg, #fff0df, #ffe3c6, #ffcf6a, #ffed85);border:1px solid #ffdb00;}
+    button.tall:active{background-image: linear-gradient(180deg, #eecb8e, #f5c97c, #f5bb57, #f2f0af);border:1px solid #c29b29;}
+      input#historydisplay:disabled {font-family:"Lucida Console", Monaco, monospace;vertical-align:top;text-align:right;margin-right:3px;background-color:transparent;border: none;}
+      input#main:disabled {font-family:"Lucida Console", Monaco, monospace;font-size:18pt;width:100%;vertical-align:bottom;text-align:right;border: none;background-color:transparent;margin-right:3px;}
+      textarea#historydisplay:disabled {resize:none;overflow:auto;font-family:"Lucida Console", Monaco, monospace;vertical-align:top;text-align:right;margin-right:5px;background-color:transparent;width:100%;height:29px;border: none;}

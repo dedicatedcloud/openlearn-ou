@@ -1,0 +1,123 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg" viewBox="0 0 533.47 302.13">
+	<defs>
+		<style>
+		    .cls-1 {
+				fill:#d7e6f3;
+			}
+			.cls-2 {
+				fill:#efd8b7;
+			}
+			.cls-3 {
+				fill:#d8d8ea;
+			}
+			.cls-4 {
+				fill:#c2d1a2;
+			}
+			.cls-5,
+			.cls-6,
+			.cls-7,
+			.cls-8 {
+				fill:none;
+				stroke-width:3px;
+			}
+			.cls-5 {
+				stroke:#c2d1a2;
+			}
+			.cls-6 {
+				stroke:#d8d8ea;
+			}
+			.cls-7 {
+				stroke:#efd8b7;
+			}
+			.cls-8 {
+				stroke:#d7e6f3;
+			}
+		    .box{
+		        font-size:14px;
+		        fill:#1f1e21;
+		        font-family:ArialMT, Arial;									
+		    }
+			.click {
+				cursor: pointer;    
+			}
+		</style>
+	</defs>
+	<title>b294_blk01_u02_sess01_a1_7_int</title>
+	<g id="txt1">
+		<g focusable="true" class="Financial-Market click" tabindex="0">
+			<rect id="financial" class="cls-4" x="258.43" y="1" width="117.85" height="26.94" rx="5"/>
+			<text class="box" transform="translate(266.01 19.02)">Financial Market</text>
+		</g>
+		<g focusable="true" class="Capital-Market click" tabindex="0">
+			<rect class="cls-3" x="189.35" y="55.42" width="114.4" height="27.92" rx="5"/>
+			<text class="box" transform="translate(201.42 73.02)">Capital Market</text>
+		</g>
+		<g focusable="true" class="Money-Market click" tabindex="0">
+			<rect class="cls-3" x="330.88" y="55.42" width="114.4" height="27.92" rx="5"/>
+			<text class="box" transform="translate(343.37 73.02)">Money Market</text>
+		</g>
+		<g focusable="true" class="Stock-Market click" tabindex="0">
+			<rect class="cls-2" x="85.92" y="117.51" width="136.43" height="25.53" rx="5"/>
+			<text class="box" transform="translate(113.27 134.91)">Stock Market</text>
+		</g>
+		<g focusable="true" class="Bond-Market click" tabindex="0">
+			<rect class="cls-2" x="272.1" y="117.36" width="162.11" height="25.68" rx="5"/>
+			<text class="box" transform="translate(305.88 134.91) scale(1.18 1)">Bond Market</text>
+		</g>
+		<g focusable="true" class="Primary-Stock-Market click" tabindex="0">
+			<rect class="cls-1" y="169.33" width="114.4" height="58.74" rx="5"/>
+			<text class="box" transform="translate(33.09 187.38)">
+				Primary
+				<tspan x="6.6" y="16.59">Stock</tspan>
+				<tspan x="2.72" y="33.17">Market</tspan>
+			</text>
+		</g>
+		<g focusable="true" class="Secondary-Stock-Market click" tabindex="0">
+			<rect class="cls-1" x="141.53" y="169.33" width="114.4" height="58.74" rx="5"/>
+			<text class="box" transform="translate(164.79 187.38)">Secondary
+				<tspan x="16.06" y="16.59">Stock</tspan>
+				<tspan x="12.28" y="33.17">Market</tspan>
+			</text>
+		</g>
+		<g focusable="true" class="Primary-Bond-Market click" tabindex="0">
+			<rect class="cls-1" x="265.24" y="169.33" width="114.4" height="58.74" rx="5"/>
+			<text class="box" transform="translate(298.33 187.38)">Primary
+				<tspan x="7.76" y="16.59">Bond</tspan>
+				<tspan x="2.72" y="33.17">Market</tspan>
+			</text>
+		</g>
+		<g focusable="true" class="Secondary-Bond-Market click" tabindex="0">
+			<rect class="cls-1" x="406.77" y="169.33" width="114.4" height="58.74" rx="5"/>
+			<text class="box" transform="translate(426.03 187.38)">Secondary
+				<tspan x="17.12" y="16.59">Bond</tspan>
+				<tspan x="12.07" y="33.17">Market</tspan>
+			</text>
+		</g>
+		<g focusable="true" class="Over-the-counter-Stock-Market-(OTC) click" tabindex="0">
+			<rect class="cls-1" x="131.08" y="242.39" width="134.84" height="58.74" rx="5"/>
+			<text class="box" transform="translate(145.66 260.33)">Over-the-counter
+				<tspan x="12.33" y="16.59">Stock Market</tspan>
+				<tspan x="34" y="33.17">(OTC)</tspan>
+			</text>
+		</g>
+		<g focusable="true" class="Over-the-counter-Bond-Market-(OTC) click" tabindex="0">
+			<rect class="cls-1" x="397.64" y="242.39" width="134.84" height="58.74" rx="5"/>
+			<text class="box" transform="translate(413.35 260.17)">Over-the-counter
+				<tspan x="13.17" y="16.58">Bond Market</tspan>
+				<tspan x="33.36" y="33.17">(OTC)</tspan>
+			</text>
+		</g>
+
+		<path class="cls-5" d="M246.84,55.29V45.56a5,5,0,0,1,5-5h131a5,5,0,0,1,5,5v9.73"/>
+		<line class="cls-5" x1="317.36" y1="26.23" x2="317.36" y2="41.68"/>
+		<path class="cls-6" d="M153.61,117.64V102.7a5,5,0,0,1,5-5h189.2a5,5,0,0,1,5,5v14.94"/>
+		<line class="cls-6" x1="246.55" y1="83.17" x2="246.55" y2="99.09"/>
+		<path class="cls-7" d="M57.12,169.94v-8.59a5,5,0,0,1,5-5h131a5,5,0,0,1,5,5v8.59"/>
+		<line class="cls-7" x1="126.54" y1="139.52" x2="126.54" y2="155.17"/>
+		<path class="cls-7" d="M322.35,169.94v-8.59a5,5,0,0,1,5-5h131a5,5,0,0,1,5,5v8.59"/>
+		<line class="cls-7" x1="391.77" y1="139.52" x2="391.77" y2="155.5"/>
+		<line class="cls-8" x1="466.61" y1="226.45" x2="466.61" y2="243.07"/>
+		<line class="cls-8" x1="199.05" y1="227.06" x2="199.05" y2="243.07"/>
+	</g>
+</svg>

@@ -1,0 +1,214 @@
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+html {
+    color: #000;
+    background: #FFF;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+h1 {
+    font-weight: bold;
+    font-size: large;
+}
+
+p,
+h1 {
+    margin-bottom: 1em;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol,
+ul {}
+
+caption,
+th {
+    text-align: left
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%
+}
+
+legend {
+    color: #000
+}
+
+body {
+    font: 1rem arial, sans-serif;
+    word-wrap: break-word;
+    -ms-word-wrap: break-word
+}
+
+#text {
+    text-align: left;
+}
+
+div.info {
+    padding: 1% 0;
+}
+
+#heading {
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+}
+
+#info {
+    border-radius: 1vw;
+    width: 96%;
+    margin: 2% 0 0;
+    padding: 2%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.type0 {
+    background-color: #c2d1a2;
+}
+
+.type1 {
+    background-color: #d8d8ea;
+}
+
+.type2 {
+    background-color: #efd8b7;
+}
+
+.type3 {
+    background-color: #d7e6f3;
+}
+
+textarea {
+    width: 100%;
+    height: 5em;
+    padding: 0.2em;
+}
+
+p {
+    margin-bottom: 0.4em;
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.5;
+    background: white;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #002158;
+    border-radius: 3px;
+    padding: 3px 10px;
+    font-size: 1.14286em;
+    transition: background-color .25s, color .25s;
+}
+
+button:hover,
+button:focus {
+    background: #002158;
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+button:hover {
+    border-color: #b1bbc4;
+}
+
+.click:focus {
+    stroke: black;
+    stroke-width: 2;
+    outline: none;
+}
+
+.box {
+    stroke: none !important;
+}

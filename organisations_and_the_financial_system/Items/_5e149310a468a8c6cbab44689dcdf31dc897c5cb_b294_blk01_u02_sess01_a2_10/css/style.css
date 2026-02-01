@@ -1,0 +1,230 @@
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+html {
+    color: #000;
+    background: #FFF;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+h1 {
+    font-weight: bold;
+    font-size: large;
+}
+
+p,
+h1 {
+    margin-bottom: 1em;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {}
+
+caption {
+    text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%;
+}
+
+legend {
+    color: #000
+}
+
+body {
+    font: 1rem arial, sans-serif;
+    word-wrap: break-word;
+    -ms-word-wrap: break-word;
+}
+
+table {
+    width: 100%;
+}
+
+tr,
+th,
+td {
+    border: 1px solid black;
+    padding: 0.3em;
+    text-align: center;
+}
+
+th {
+    font-style: italic;
+    font-weight: bold;
+}
+
+td.grade {
+    text-align: center;
+}
+
+td.grade:focus,
+td.grade:hover {
+    outline: 2px solid blue;
+}
+
+td.class {
+    padding-right: 1em;
+    text-align: center;
+}
+
+td.capacity {
+    padding-left: 1em;
+    text-align: center;
+}
+
+#text {
+    text-align: left;
+}
+
+div.info {
+    padding: 1% 0;
+}
+
+#heading {
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+}
+
+#info {
+    border-radius: 0.2vw;
+    width: 96%;
+    margin: 2% 0 0;
+    padding: 2%;
+    color: #312b39;
+    background-color: #fccaad;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.aaa {
+    background-color: #489DD0;
+}
+
+.aa {
+    background-color: #7EB4DB;
+}
+
+.a {
+    background-color: #C2DAED;
+}
+
+.bbb {
+    background-color: #EBF3F9;
+}
+
+.bb {
+    background-color: #F5E5CF;
+}
+
+.b {
+    background-color: #EACB9F;
+}
+
+.ccc {
+    background-color: #DFB171;
+}
+
+.cc {
+    background-color: #D59847;
+}
+
+.c {
+    background-color: black;
+    color: white;
+}
